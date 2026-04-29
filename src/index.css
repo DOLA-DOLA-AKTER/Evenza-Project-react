@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 575px;
+  --breakpoint-md: 768px;
+  --breakpoint-xl: 1170px;
+  --breakpoint-xxl: 1320px;
+  
+  --font-Onest: "Onest", sans-serif;
+
+  --color-primary: #734BDF;
+  --color-white-opacity: rgba(255, 255, 255, 0.062);
+  --color-lightwhite-opacity: rgba(255, 255, 255, 0.502);
+}
+
