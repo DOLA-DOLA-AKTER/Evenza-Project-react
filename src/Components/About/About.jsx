@@ -21,19 +21,25 @@ const About = () => {
     <div className='py-20'>
         <Container>
             <div className='grid grid-cols-2 gap-11.25 items-center justify-content-center'>
-                <div className="grid grid-cols-[10_2fr] gap-0 relative">
-                    <div className='flex flex-col gap-7 items-center'>
-                        <div className='w-141.75' h-101>
+
+                {/* right info */}
+                <div className="flex flex-row gap-0 relative">
+                    <div className='flex flex-col gap-4'>
+                        <div className='w-120.75' h-90>
                             <img src={about} alt="about" />
                         </div>
-                        <div className=''>
+                        <div className='w-30 h-30 ml-25'>
                             <img src={experience} alt="experience" />
                         </div>
                     </div>
-                    <div className='w-88 h-123.5 absolute -right-20 -bottom-24'>
-                        <img src={premium} alt="premium" />
+                    <div className=' absolute bottom-0 right-0'>
+                        <div className='w-100'>
+                            <img src={premium} alt="premium" className='absolute -bottom-18 -right-15' />
+                        </div>
                     </div>
                 </div>
+
+                {/* left info */}
                 <div className='flex flex-col gap-0'>
                     <Circle>
                         About Us
@@ -47,14 +53,17 @@ const About = () => {
                         leaders, and changemakers to share knowledge, spark inspiration, and create meaningful
                         connections.
                     </Peragraph>
-                    <div className='bg-[#F6F6F7] rounded-[20px] p-2.5 flex items-center gap-2 justify-center my-10.5'>
-                        <h5 className='hover:bg-white rounded-[10px] py-5 px-10 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
+
+                    {/* Our Mission, Vision, Goal */}
+
+                    <div className='bg-[#F6F6F7] rounded-[20px] p-2.5 flex items-center gap-5 justify-center my-10.5'>
+                        <h5 className='hover:bg-white rounded-[10px] py-5 px-13 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
                             Our Mission
                         </h5>
-                        <h5 className='hover:bg-white rounded-[10px] py-5 px-10 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
+                        <h5 className='hover:bg-white rounded-[10px] py-5 px-13 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
                             Our Vision
                         </h5>
-                        <h5 className='hover:bg-white rounded-[10px] py-5 px-10 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
+                        <h5 className='hover:bg-white rounded-[10px] py-5 px-13 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
                             Our Goal
                         </h5>
                     </div>
