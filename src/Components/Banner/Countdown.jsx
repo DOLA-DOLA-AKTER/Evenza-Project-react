@@ -15,7 +15,7 @@ const Countdown = () => {
             const countDown = countDownDateAndTime(conduct_date);
 
             //  time up condition
-            if (countDown.days <= 0 && countDown.hours <= 0 && countDown.minutes <= 0 && countDown.seconds <= 0) {
+            if (countDown.total <= 0) {
                 setTimeUp(true);
                 clearInterval(interval);
             } else {

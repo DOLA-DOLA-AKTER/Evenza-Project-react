@@ -13,6 +13,8 @@
   --font-Onest: "Onest", sans-serif;
 
   --color-primary: #734BDF;
+  --color-black: #161A2D;
+  --color-gray: #737681;
   --color-white-opacity: rgba(255, 255, 255, 0.062);
   --color-lightwhite-opacity: rgba(255, 255, 255, 0.502);
 }
