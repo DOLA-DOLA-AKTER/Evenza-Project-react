@@ -5,10 +5,11 @@ import { FaPlay } from "react-icons/fa";
 import border from '../assets/border.png'
 import border1 from '../assets/border1.png'
 import border2 from '../assets/border2.png'
+import Countdown from './Countdown';
 
 const Banner = () => {
   return (
-    <div className='bg-[url(./Components/assets/background.png)] bg-no-repeat bg-cover bg-cover w-full pt-62.5 pb-37 bg-red-300 '>
+    <div className='bg-[url(./Components/assets/background.png)] bg-no-repeat bg-center bg-cover w-full pt-62.5 pb-37 '>
       <Container>
         <div className='flex flex-col items-center justify-center'>
           <div className='flex items-center gap-2 p-2.5 bg-white-opacity backdrop-blur-[20px] rounded-full'>
@@ -43,25 +44,11 @@ const Banner = () => {
             </div>
           </div>
           <p className='text-[20px] font-bold leading-5.5 pt-15 pb-10'>Upcoming Speaker Reveal - Don't Miss Out</p>
-          <div className='flex items-center gap-7.5'>
-            <div className='rounded-[20px] backdrop-blur-[20px] w-31.25 h-30 flex flex-col items-center justify-center bg-white-opacity'>
-              <h3 className='text-[40px] font-bold leading-11 '>202</h3>
-              <p className='text-center'>Days</p>
-            </div>
-            <div className='rounded-[20px] backdrop-blur-[20px] w-31.25 h-30 flex flex-col items-center justify-center bg-white-opacity'>
-              <h3 className='text-[40px] font-bold leading-11 '>08</h3>
-              <p className='text-center'>Hours</p>
-            </div>
-            <div className='rounded-[20px] backdrop-blur-[20px] w-31.25 h-30 flex flex-col items-center justify-center bg-white-opacity'>
-              <h3 className='text-[40px] font-bold leading-11 '>13</h3>
-              <p className='text-center'>Minutes</p>
-            </div>
-            <div className='rounded-[20px] backdrop-blur-[20px] w-31.25 h-30 flex flex-col items-center justify-center bg-white-opacity'>
-              <h3 className='text-[40px] font-bold leading-11 '>14</h3>
-              <p className='text-center'>Seconds</p>
-            </div>
 
-          </div>
+          {/* Countdown Timer */}
+
+          <Countdown/>
+
         </div>
 
       </Container>
