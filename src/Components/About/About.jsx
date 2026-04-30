@@ -10,10 +10,9 @@ import phone from '../assets/phone.png'
 // components
 import Container from '../Container/Container'
 import Peragraph from '../Container/Peragraph'
-import Heading from '../Container/Heading'
-import Circle from '../Container/Circle'
 import Heading3 from '../Container/Heading3'
 import Btn from '../Button/Btn'
+import SectionHeading2 from '../Container/SectionHeading2'
 
 
 const About = () => {
@@ -25,7 +24,7 @@ const About = () => {
                 {/* right info */}
                 <div className="flex flex-row gap-0 relative">
                     <div className='flex flex-col gap-4'>
-                        <div className='w-120.75' h-90>
+                        <div className='w-120.75 h-90'>
                             <img src={about} alt="about" />
                         </div>
                         <div className='w-30 h-30 ml-25'>
@@ -41,13 +40,12 @@ const About = () => {
 
                 {/* left info */}
                 <div className='flex flex-col gap-0'>
-                    <Circle>
-                        About Us
-                    </Circle>
-                    <Heading className='pt-2.5 pb-4.5'>
-                        Uncover our mission & purpose
-                        behind this event
-                    </Heading>
+                    <SectionHeading2
+                        about="About Us"
+                        heading="Uncover our mission & purpose
+                        behind this event"
+                        
+                    />
                     <Peragraph>
                         Discover the vision that drives this event—a commitment to bringing together innovators,
                         leaders, and changemakers to share knowledge, spark inspiration, and create meaningful
@@ -56,14 +54,14 @@ const About = () => {
 
                     {/* Our Mission, Vision, Goal */}
 
-                    <div className='bg-[#F6F6F7] rounded-[20px] p-2.5 flex items-center gap-5 justify-center my-10.5'>
-                        <h5 className='hover:bg-white rounded-[10px] py-5 px-13 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
+                    <div className='bg-[#F6F6F7] rounded-[20px] p-2.5 flex items-center gap-4 justify-center my-10.5'>
+                        <h5 className='hover:bg-white rounded-[10px] py-5 px-11 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
                             Our Mission
                         </h5>
-                        <h5 className='hover:bg-white rounded-[10px] py-5 px-13 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
+                        <h5 className='hover:bg-white rounded-[10px] py-5 px-11 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
                             Our Vision
                         </h5>
-                        <h5 className='hover:bg-white rounded-[10px] py-5 px-13 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
+                        <h5 className='hover:bg-white rounded-[10px] py-5 px-11 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
                             Our Goal
                         </h5>
                     </div>

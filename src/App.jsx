@@ -3,6 +3,7 @@ import './App.css'
 import Navber from './Components/Navber/Navber'
 import Banner from './Components/Banner/Banner'
 import About from './Components/About/About'
+import Feature from './Components/Feature/Feature'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,6 +13,7 @@ function App() {
       <Navber/>
       <Banner/>
       <About/>
+      <Feature/>
     </>
   )
 }
