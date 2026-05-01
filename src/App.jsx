@@ -6,6 +6,7 @@ import About from './Components/About/About'
 import Feature from './Components/Feature/Feature'
 import Benefits from './Components/Benefits/Benefits'
 import Schedule from './Components/Schedule/Schedule'
+import Speakers from './Components/Speakers/Speakers'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Feature/>
       <Benefits/>
       <Schedule/>
+      <Speakers/>
     </>
   )
 }
