@@ -7,6 +7,9 @@ import Feature from './Components/Feature/Feature'
 import Benefits from './Components/Benefits/Benefits'
 import Schedule from './Components/Schedule/Schedule'
 import Speakers from './Components/Speakers/Speakers'
+import Image from './Components/Image/Image'
+import Pricing from './Components/Pricing/Pricing'
+import Vedio from './Components/Vedio/Vedio'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +23,9 @@ function App() {
       <Benefits/>
       <Schedule/>
       <Speakers/>
+      <Image/>
+      <Pricing/>
+      <Vedio/>
     </>
   )
 }

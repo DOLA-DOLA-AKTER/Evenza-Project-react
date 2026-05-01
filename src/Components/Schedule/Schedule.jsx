@@ -25,7 +25,7 @@ const Schedule = () => {
               <h4 className='text-white hover:text-black font-bold text-[20px] leading-5.5 hover:bg-white rounded-full py-4.5 px-9 duration-300 cursor-pointer'>Day 03</h4>
             </div>
 
-            <div className='flex flex-col gap-10'>
+            <div className='flex flex-col justify-center items-center gap-10'>
               <div className='flex gap-14 border border-b-white/10 border-l-0 border-r-0 border-t-0 pb-5'>
                 <div className='flex gap-7.5 items-center'>
                   <div>
