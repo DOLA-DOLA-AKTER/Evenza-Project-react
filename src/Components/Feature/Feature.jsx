@@ -1,4 +1,7 @@
 import React from 'react'
+import { FaStar } from "react-icons/fa";
+import { LuBellRing } from "react-icons/lu";
+
 import Container from '../Container/Container'
 import Circle from '../Container/SectionHeading2'
 import Heading from '../Container/Heading'
@@ -6,12 +9,10 @@ import FeatureCard from './FeatureCard'
 import SectionHeading from '../Container/SectionHeading'
 import Heading3 from '../Container/Heading3'
 import Peragraph from '../Container/Peragraph'
-import { LuBellRing } from "react-icons/lu";
-import { FaStar } from "react-icons/fa";
 
 const Feature = () => {
     return (
-        <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)] py-20'>
+        <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)] py-25'>
             <Container>
 
                 {/* Section Heading */}

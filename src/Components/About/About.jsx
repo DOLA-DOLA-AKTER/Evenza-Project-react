@@ -5,7 +5,6 @@ import premium from '../assets/premium.png'
 import experience from '../assets/experience.png'
 import receive from '../assets/receive.png'
 import receive2 from '../assets/receive2.png'
-import phone from '../assets/phone.png'
 
 // components
 import Container from '../Container/Container'
@@ -13,11 +12,13 @@ import Peragraph from '../Container/Peragraph'
 import Heading3 from '../Container/Heading3'
 import Btn from '../Button/Btn'
 import SectionHeading2 from '../Container/SectionHeading2'
+import IconText from '../Container/IconText'
+import Phone from '../Container/Phone'
 
 
 const About = () => {
   return (
-    <div className='py-20'>
+    <div className='py-25'>
         <Container>
             <div className='grid grid-cols-2 gap-11.25 items-center justify-content-center'>
 
@@ -69,40 +70,20 @@ const About = () => {
                         Our vision is to build a global community where collaboration fuels innovation we aim encourage
                         fresh thinking, spark inspiring dialogues, and create a space.
                     </Peragraph>
-                    <div className='flex items-center gap-7.5'>
-                        <div className="flex items-center gap-4 py-10">
-                            <div className='w-12.5 h-12.5 rounded'>
-                                <img src={receive} alt="" />
-                            </div>
-                            <Heading3>
-                                Receive real-time event
-                                updates.
-                            </Heading3>
-                        </div>
-                        <div className="flex items-center gap-4 py-10">
-                            <div className='w-12.5 h-12.5 rounded'>
-                                <img src={receive2} alt="" />
-                            </div>
-                            <Heading3>
-                                Receive real-time event
-                                updates.
-                            </Heading3>
-                        </div>
+                    <div className='flex items-center gap-7.5 py-10'>
+                        <IconText
+                         icons={receive}
+                         text=' Receive real-time event updates.'
+                        />
+                        <IconText
+                         icons={receive2}
+                         text='Receive real-time event
+                         updates.'
+                        />
                     </div>
-                    <div className='border border-t-black/10 flex items-center gap-7.5 pt-10'>
-                        <Btn>Learn More About</Btn>
-                        <div className='flex items-center gap-3'>
-                            <div className='bg-primary rounded-[10px] p-3 flex items-center justify-center'>
-                                <img src={phone} alt="phone" />
-                            </div>
-                            <div className='flex flex-col'>
-                                <Heading3>Call Now!</Heading3>
-                                <Peragraph>+00 123 456 789</Peragraph>
-                            </div>
-                        </div>
-                        
-
-                    </div>
+                    <Phone
+                        children="Learn More About"
+                    />
                 </div>
             </div>
         </Container>
