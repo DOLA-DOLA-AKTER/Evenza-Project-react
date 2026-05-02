@@ -35,10 +35,10 @@ const Banner = () => {
           <div className='flex items-center gap-10'>
             <Btn>Explore Schedule</Btn>
             <div className='flex items-center gap-5'>
-              <div className='p-1 rounded-full bg-lightwhite-opacity'>
+              <div className='p-1 rounded-full bg-lightwhite-opacity cursor-pointer'>
                 <div className='p-2.5 rounded-full bg-primary '>
-                <FaPlay className='w-3.75 h-3.25 text-white '></FaPlay>
-              </div>
+                  <FaPlay className='w-3.75 h-3.25 text-white '></FaPlay>
+                </div>
               </div>
               <h5 className='text-base font-bold leading-4.25'>Watch Video</h5>
             </div>
@@ -47,7 +47,7 @@ const Banner = () => {
 
           {/* Countdown Timer */}
 
-          <Countdown/>
+          <Countdown />
 
         </div>
 

@@ -47,21 +47,21 @@ const Footer = () => {
                             to inspire innovation, empower professionals,
                             and connect leaders from around the globe.</Peragraph>
                         <div className="flex items-center gap-3.75">
-                            <div>
+                            <div className='cursor-pointer'>
                                 <img src={pIcon} alt="pIcon" />
                             </div>
-                            <div>
+                            <div className='cursor-pointer'>
                                 <img src={pIcon} alt="pIcon" />
                             </div>
-                            <div>
+                            <div className='cursor-pointer'>
                                 <img src={facebook} alt="facebook" />
                             </div>
-                            <div>
+                            <div className='cursor-pointer'>
                                 <img src={instagram} alt="instagram" />
                             </div>
                         </div>
-
                     </div>
+
                     <div className='flex justify-between gap-0 '>
                         <div>
                             <Heading3 className='text-white pb-7.5'>Quick Links</Heading3>

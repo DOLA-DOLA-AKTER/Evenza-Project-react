@@ -6,7 +6,7 @@ import Heading3 from '../Container/Heading3';
 
 const TestimonialCard = ({peragraph, icon, title, decs}) => {
     return (
-        <div className='rounded-[20px] bg-white/10 p-10'>
+        <div className='rounded-[20px] bg-white/10 p-10 cursor-pointer'>
             <div className='flex items-center gap-1'>
                 <FaStar className='text-primary' />
                 <FaStar className='text-primary' />

@@ -5,7 +5,7 @@ const Vedio = () => {
   return (
     <div className='bg-[url(./Components/assets/bg-img-2.png)] bg-no-repeat bg-center bg-cover w-full h-[800px] flex items-center justify-center'>
 
-      <div className='bg-primary rounded-full flex items-center justify-center w-25 h-25  animate-pulse'>
+      <div className='bg-primary rounded-full flex items-center justify-center w-25 h-25 animate-pulse cursor-pointer'>
         <div>
           <img src={playButton} alt="playButton" />
         </div>
