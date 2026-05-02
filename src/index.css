@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 
 @theme {
   --breakpoint-*: initial;
@@ -9,14 +8,42 @@
   --breakpoint-md: 768px;
   --breakpoint-xl: 1170px;
   --breakpoint-xxl: 1320px;
-  
+
   --font-Onest: "Onest", sans-serif;
 
-  --color-primary: #734BDF;
-  --color-black: #161A2D;
+  --color-primary: #734bdf;
+  --color-black: #161a2d;
   --color-gray: #737681;
+  --color-light-gray: #F6F6F7;
   --color-white-opacity: rgba(255, 255, 255, 0.062);
   --color-lightwhite-opacity: rgba(255, 255, 255, 0.502);
 }
 
+@theme {
+  --animate-pulse: pulse 2s ease-in-out infinite;
+  @keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(220, 212, 212, 0.603),  0 0 0 0 rgba(214, 205, 205, 0.632);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(183, 167, 167, 0.47),  0 0 0 30px rgba(191, 179, 179, 0.445);
+    }
+  }
+}
 
+
+@theme {
+  --animate-sm_pulse: sm_pulse 1s ease-in-out infinite;
+  @keyframes sm_pulse {
+    0% {
+      box-shadow:
+        0 0 0 0 rgba(249, 249, 249, 0.15),
+        0 0 0 0 rgba(249, 249, 249, 0.15);
+    }
+    100% {
+      box-shadow:
+        0 0 0 0 rgba(206, 194, 194, 0.07),
+        0 0 0 15px rgba(206, 194, 194, 0.07);
+    }
+  }
+}
