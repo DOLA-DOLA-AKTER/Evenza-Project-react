@@ -3,6 +3,7 @@ import logo from '../assets/logo.png'
 import Container from '../Container/Container'
 import Btn from '../Button/Btn'
 import { IoIosArrowDown } from "react-icons/io";
+import { NavLink } from "react-router";
 
 const Navber = () => {
     return (
@@ -16,12 +17,12 @@ const Navber = () => {
                             </div>
                             <div>
                                 <ul className='text-white text-base leading-6 flex items-center gap-10 cursor-pointer'>
-                                    <li className='flex items-center gap-1.75'>Home <IoIosArrowDown /></li>
-                                    <li className='cursor-pointer'>About Us</li>
-                                    <li className='cursor-pointer'>Schedule</li>
-                                    <li className='cursor-pointer'>Blog</li>
-                                    <li className='flex items-center gap-1.75 cursor-pointer'>Pages <IoIosArrowDown /></li>
-                                    <li className='cursor-pointer'>Contact Us</li>
+                                    <li className='flex items-center gap-1.75'><NavLink to="/" >Home</NavLink> <IoIosArrowDown /></li>
+                                    <li className='cursor-pointer'><NavLink to="/aboutus">About Us</NavLink></li>
+                                    <li className='cursor-pointer'><NavLink to="/schedules">Schedule</NavLink></li>
+                                    <li className='cursor-pointer'><NavLink to="/blogs">Blog</NavLink></li>
+                                    <li className='flex items-center gap-1.75 cursor-pointer'><NavLink to="/pages">Pages</NavLink> <IoIosArrowDown /></li>
+                                    <li className='cursor-pointer'><NavLink to="/contactUs" >Contact Us</NavLink></li>
                                 </ul>
                             </div>
                             <div>
