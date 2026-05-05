@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { countDownDateAndTime } from 'countdown-date-time';
+import Peragraph from '../Container/Peragraph';
 
 const Countdown = () => {
     let [count, setCount] = useState({});
     let [timeUp, setTimeUp] = useState(false);
 
-    const conduct_date = '2026-05-04 07:30:00';
+    const conduct_date = '2026-05-06 19:30:00';
 
     useEffect(() => {
 
@@ -41,25 +42,25 @@ const Countdown = () => {
     }
 
     return (
-        <div className='flex items-center gap-7.5'>
-            <div className='rounded-[20px] backdrop-blur-[20px] w-31.25 h-30 flex flex-col items-center justify-center bg-white-opacity'>
-                <h3 className='text-[40px] font-bold'>{count.days}</h3>
-                <p>Days</p>
+        <div className='flex flex-wrap items-center gap-7.5'>
+            <div className='rounded-[20px] backdrop-blur-[20px] md:w-31.25 md:h-30 w-22 h-21 flex flex-col items-center justify-center bg-white-opacity'>
+                <h3 className='md:text-[40px] text-3xl font-bold'>{count.days}</h3>
+                <Peragraph className='text-white'>Days</Peragraph>
             </div>
 
-            <div className='rounded-[20px] backdrop-blur-[20px] w-31.25 h-30 flex flex-col items-center justify-center bg-white-opacity'>
-                <h3 className='text-[40px] font-bold'>{count.hours}</h3>
-                <p>Hours</p>
+            <div className='rounded-[20px] backdrop-blur-[20px] md:w-31.25 md:h-30 w-22 h-21 flex flex-col items-center justify-center bg-white-opacity'>
+                <h3 className='md:text-[40px] text-3xl font-bold'>{count.hours}</h3>
+                <Peragraph className='text-white'>Hours</Peragraph>
             </div>
 
-            <div className='rounded-[20px] backdrop-blur-[20px] w-31.25 h-30 flex flex-col items-center justify-center bg-white-opacity'>
-                <h3 className='text-[40px] font-bold'>{count.minutes}</h3>
-                <p>Minutes</p>
+            <div className='rounded-[20px] backdrop-blur-[20px] md:w-31.25 md:h-30 w-22 h-21 flex flex-col items-center justify-center bg-white-opacity'>
+                <h3 className='md:text-[40px] text-3xl font-bold'>{count.minutes}</h3>
+                <Peragraph className='text-white'>Minutes</Peragraph>
             </div>
 
-            <div className='rounded-[20px] backdrop-blur-[20px] w-31.25 h-30 flex flex-col items-center justify-center bg-white-opacity'>
-                <h3 className='text-[40px] font-bold'>{count.seconds}</h3>
-                <p>Seconds</p>
+            <div className='rounded-[20px] backdrop-blur-[20px] md:w-31.25 md:h-30 w-22 h-21 flex flex-col items-center justify-center bg-white-opacity'>
+                <h3 className='md:text-[40px] text-3xl font-bold'>{count.seconds}</h3>
+                <Peragraph className='text-white'>Seconds</Peragraph>
             </div>
         </div>
     )

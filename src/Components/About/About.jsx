@@ -17,78 +17,87 @@ import Phone from '../Container/Phone'
 
 
 const About = () => {
-  return (
-    <div className='py-25'>
-        <Container>
-            <div className='grid grid-cols-2 gap-11.25 items-center justify-content-center'>
+    return (
+        <div className='py-12 md:py-16 lg:py-25 px-5 lg:px-0'>
+            <Container>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-11 items-center'>
 
-                {/* right info */}
-                <div className="flex flex-row gap-0 relative">
-                    <div className='flex flex-col gap-4'>
-                        <div className='w-120.75 h-90'>
-                            <img src={about} alt="about" />
+                    {/* IMAGES */}
+                    <div className="flex flex-col items-center lg:items-start relative">
+
+                        <div className='flex flex-col gap-4'>
+                            <div className='w-full max-w-md'>
+                                <img src={about} alt="about" className='w-full h-auto' />
+                            </div>
+
+                            <div className='w-20 sm:w-24 md:w-30 ml-0 lg:ml-25'>
+                                <img src={experience} alt="experience" className='w-full h-auto' />
+                            </div>
                         </div>
-                        <div className='w-30 h-30 ml-25'>
-                            <img src={experience} alt="experience" />
+
+                        {/* FLOAT IMAGE */}
+                        <div className=' absolute bottom-0 right-0'>
+                            <div className='md:w-100 w-60'>
+                                <img src={premium} alt="premium" className='absolute -bottom-18 -right-15' />
+                            </div>
                         </div>
                     </div>
-                    <div className=' absolute bottom-0 right-0'>
-                        <div className='w-100'>
-                            <img src={premium} alt="premium" className='absolute -bottom-18 -right-15' />
+
+                    <div className='flex flex-col'>
+                        <SectionHeading2
+                            about="About Us"
+                            heading={`Uncover our mission & purpose behind this event`}
+                        />
+
+                        <Peragraph>
+                            Discover the vision that drives this event—a commitment to bringing together innovators,
+                            leaders, and changemakers to share knowledge, spark inspiration, and create meaningful
+                            connections.
+                        </Peragraph>
+
+                        {/* TABS */}
+                        <div className='bg-[#F6F6F7] rounded-xl md:rounded-[20px] p-2 flex flex-wrap justify-center gap-2 sm:gap-4 my-6 md:my-10'>
+
+                            <h5 className='hover:bg-white rounded-lg py-3 px-5 sm:px-8 text-black font-bold text-sm sm:text-base transition duration-300 text-center cursor-pointer'>
+                                Our Mission
+                            </h5>
+
+                            <h5 className='hover:bg-white rounded-lg py-3 px-5 sm:px-8 text-black font-bold text-sm sm:text-base transition duration-300 text-center cursor-pointer'>
+                                Our Vision
+                            </h5>
+
+                            <h5 className='hover:bg-white rounded-lg py-3 px-5 sm:px-8 text-black font-bold text-sm sm:text-base transition duration-300 text-center cursor-pointer'>
+                                Our Goal
+                            </h5>
+
                         </div>
+
+                        <Peragraph>
+                            Our vision is to build a global community where collaboration fuels innovation we aim encourage
+                            fresh thinking, spark inspiring dialogues, and create a space.
+                        </Peragraph>
+
+                        {/* ICON TEXT */}
+                        <div className='flex flex-col sm:flex-row gap-5 sm:gap-7.5 py-6 md:py-10'>
+                            <IconText
+                                icons={receive}
+                                text='Receive real-time event updates.'
+                            />
+                            <IconText
+                                icons={receive2}
+                                text='Receive real-time event updates.'
+                            />
+                        </div>
+
+                        <Phone>
+                            Learn More About
+                        </Phone>
+
                     </div>
                 </div>
-
-                {/* left info */}
-                <div className='flex flex-col gap-0'>
-                    <SectionHeading2
-                        about="About Us"
-                        heading="Uncover our mission & purpose
-                        behind this event"
-                        
-                    />
-                    <Peragraph>
-                        Discover the vision that drives this event—a commitment to bringing together innovators,
-                        leaders, and changemakers to share knowledge, spark inspiration, and create meaningful
-                        connections.
-                    </Peragraph>
-
-                    {/* Our Mission, Vision, Goal */}
-
-                    <div className='bg-[#F6F6F7] rounded-[20px] p-2.5 flex items-center gap-4 justify-center my-10.5'>
-                        <h5 className='hover:bg-white rounded-[10px] py-5 px-11 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
-                            Our Mission
-                        </h5>
-                        <h5 className='hover:bg-white rounded-[10px] py-5 px-11 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
-                            Our Vision
-                        </h5>
-                        <h5 className='hover:bg-white rounded-[10px] py-5 px-11 text-black font-bold text-base leading-5 transition duration-300 text-center cursor-pointer'>
-                            Our Goal
-                        </h5>
-                    </div>
-                    <Peragraph>
-                        Our vision is to build a global community where collaboration fuels innovation we aim encourage
-                        fresh thinking, spark inspiring dialogues, and create a space.
-                    </Peragraph>
-                    <div className='flex items-center gap-7.5 py-10'>
-                        <IconText
-                         icons={receive}
-                         text=' Receive real-time event updates.'
-                        />
-                        <IconText
-                         icons={receive2}
-                         text='Receive real-time event
-                         updates.'
-                        />
-                    </div>
-                    <Phone
-                        children="Learn More About"
-                    />
-                </div>
-            </div>
-        </Container>
-    </div>
-  )
+            </Container>
+        </div>
+    )
 }
 
 export default About

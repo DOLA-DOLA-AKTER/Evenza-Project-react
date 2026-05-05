@@ -3,8 +3,8 @@ import { Children } from 'react'
 
 const Peragraph = ({children, className}) => {
   return (
-    <p className={`text-base font-normal leading-6 text-gray ${className}`}>
-        {children}
+    <p className={`text-sm md:text-base leading-6 text-gray ${className}`}>
+      {children}
     </p>
   )
 }

@@ -9,12 +9,14 @@ import Countdown from './Countdown';
 
 const Banner = () => {
   return (
-    <div className='bg-[url(./Components/assets/background.png)] bg-no-repeat bg-center bg-cover w-full pt-62.5 pb-37 '>
+    <div className='bg-[url(./Components/assets/background.png)] bg-no-repeat bg-center bg-cover w-full pt-35 pb-16 md:pt-40 md:pb-24 lg:pt-62.5 lg:pb-37'>
       <Container>
-        <div className='flex flex-col items-center justify-center'>
-          <div className='flex items-center gap-2 p-2.5 bg-white-opacity backdrop-blur-[20px] rounded-full'>
+        <div className='flex flex-col items-center justify-center text-center  px-5 lg:px-0'>
+
+          {/* TOP BADGE */}
+          <div className='flex items-center gap-2 p-2 bg-white/20 backdrop-blur-[20px] rounded-full'>
             <div className='flex items-center'>
-              <div className='relative -z-0'>
+              <div className='relative'>
                 <img src={border} alt="" />
               </div>
               <div className='-ml-2 z-10'>
@@ -24,33 +26,48 @@ const Banner = () => {
                 <img src={border2} alt="" />
               </div>
             </div>
-            <p className='text-sm font-semibold leading-5.5'>Ideas that spark change.</p>
+            <p className='text-xs md:text-sm font-semibold'>
+              Ideas that spark change.
+            </p>
           </div>
-          <div>
-            <h1 className='text-[76px] font-extrabold leading-21 -tracking-[1.52px] text-center'>Connecting Minds to Shape
-              Tomorrow's Big Ideas</h1>
-            <p className='text-base font-normal leading-6.25 w-183.25 text-center mx-auto pt-3.75 pb-13'>Experience a powerful gathering of visionaries, creators, and industry experts united by one goal—
-              exchanging ideas that spark growth, innovation, and meaningful change.</p>
+
+          {/* HEADING */}
+          <div className='mt-6'>
+            <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-[76px] font-extrabold leading-tight lg:leading-21 tracking-tight text-center'>
+              Connecting Minds to Shape <br className='hidden md:block' />
+              Tomorrow's Big Ideas
+            </h1>
+
+            <p className='text-sm md:text-base leading-6 w-full lg:w-[750px] mx-auto pt-4 pb-8'>
+              Experience a powerful gathering of visionaries, creators, and industry experts united by one goal—
+              exchanging ideas that spark growth, innovation, and meaningful change.
+            </p>
           </div>
-          <div className='flex items-center gap-10'>
+
+          <div className='flex flex-col sm:flex-row items-center gap-5 sm:gap-10'>
             <Btn>Explore Schedule</Btn>
-            <div className='flex items-center gap-5'>
-              <div className='p-1 rounded-full bg-lightwhite-opacity cursor-pointer'>
-                <div className='p-2.5 rounded-full bg-primary '>
-                  <FaPlay className='w-3.75 h-3.25 text-white '></FaPlay>
+
+            <div className='flex items-center gap-4'>
+              <div className='p-1 rounded-full bg-white/20 cursor-pointer'>
+                <div className='p-2 rounded-full bg-primary'>
+                  <FaPlay className='w-3 h-3 text-white' />
                 </div>
               </div>
-              <h5 className='text-base font-bold leading-4.25'>Watch Video</h5>
+              <h5 className='text-sm md:text-base font-bold'>
+                Watch Video
+              </h5>
             </div>
           </div>
-          <p className='text-[20px] font-bold leading-5.5 pt-15 pb-10'>Upcoming Speaker Reveal - Don't Miss Out</p>
 
-          {/* Countdown Timer */}
+          {/* TEXT */}
+          <p className='text-base md:text-lg font-bold pt-10 pb-6'>
+            Upcoming Speaker Reveal - Don't Miss Out
+          </p>
 
+          {/* COUNTDOWN */}
           <Countdown />
 
         </div>
-
       </Container>
     </div>
   )
