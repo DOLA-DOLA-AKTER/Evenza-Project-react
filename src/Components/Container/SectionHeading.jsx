@@ -7,7 +7,7 @@ const SectionHeading = ({peragraph, title, className}) => {
                 <div className='w-1.5 h-1.5 rounded-full bg-white'></div>
                 <p className='text-[14px] text-white font-semibold'>{peragraph}</p>
             </div>
-            <h2 className={`text-[48px] font-semibold leading-13 -tracking-[0.96px] text-white w-160 mx-auto text-center pt-3 ${className}`}>
+            <h2 className={`lg:text-[48px] md:text-[40px] text-[33px] font-semibold md:leading-13 leading-tight tracking-[-0.96px] text-white md:w-160 w-full mx-auto text-center pt-3 ${className}`}>
                 {title}
             </h2>
         </div>

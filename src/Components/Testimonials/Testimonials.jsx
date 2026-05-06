@@ -8,15 +8,15 @@ import TestimonialCard from './TestimonialCard'
 
 const Testimonials = () => {
   return (
-    <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)] py-25'>
+    <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)] py-25 lg:px-0 px-5'>
         <Container>
             <SectionHeading
                 peragraph='Testimonials'
                 title='What our customers say about their
                 experience'
-                className='w-197'
+                className='md:w-197 w-full'
             />
-            <div className='grid grid-cols-3 gap-7.5 pt-20'>
+            <div className='grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-7.5 pt-20'>
                 <TestimonialCard 
                 peragraph='"Truly outstanding service! The team exceeded our
                 expectations with their professionalism, creativity,
@@ -48,7 +48,7 @@ const Testimonials = () => {
             <Peragraph className='py-15 text-white text-center'>
                 Supported by Brands That Inspire Innovation
             </Peragraph>
-            <div className='flex items-center justify-center gap-20'>
+            <div className='flex flex-wrap items-center justify-center gap-20'>
                 <div>
                     <img src={supportsLogo} alt="supportsLogo" />
                 </div>

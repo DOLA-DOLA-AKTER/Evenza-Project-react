@@ -9,9 +9,9 @@ import Accordion from './Accordion'
 
 const FAQ = () => {
   return (
-    <div className='py-25'>
+    <div className='py-25 px-5 lg:px-0'>
         <Container>
-            <div className='grid grid-cols-[4fr_8fr] gap-10'>
+            <div className='grid lg:grid-cols-[4fr_8fr] grid-cols-1 gap-10'>
                 <div className='relative'>
                     <div>
                         <img src={faqsImage} alt="faqsImage" />

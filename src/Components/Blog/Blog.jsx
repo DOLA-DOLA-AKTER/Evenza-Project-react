@@ -16,16 +16,16 @@ import BlogCard from './BlogCard'
 
 const Blog = () => {
     return (
-        <div className='py-25'>
+        <div className='py-25 lg:px-0 px-5'>
             <Container>
                 <SectionHeading2
                     about="Latest Blog"
                     heading="Explore our latest insights stories
             and updates"
                     className='justify-center'
-                    classNames='w-184 mx-auto text-center'
+                    classNames='md:w-184 w-full mx-auto text-center'
                 />
-                <div className='grid grid-cols-2 gap-10 items-center pt-20'>
+                <div className='grid lg:grid-cols-2 gap-10 items-center pt-20'>
                     <div>
                         <BlogCard
                             img={blogImg}
@@ -39,16 +39,16 @@ const Blog = () => {
                     </div>
                     <div className='flex flex-col gap-7.5'>
                         <BlogCard
-                            className='flex items-center justify-center'
-                            imgclass='w-160 h-80'
+                            className='flex flex-wrap md:items-center md:justify-center'
+                            imgclass='md:w-160 w-full h-80'
                             img={blogImg3}
                             icon={pricingBenefit}
                             peragraph='Esther Howard'
                             title="Simple Self-Defense Skills Everyone Should Learn for Safety"
                         />
                         <BlogCard
-                            className='flex items-center justify-center'
-                            imgclass='w-160 h-80'
+                            className='flex flex-wrap md:items-center md:justify-center'
+                            imgclass='md:w-160 w-full h-80'
                             img={blogImg2}
                             icon={pricingBenefit}
                             peragraph='Esther Howard'

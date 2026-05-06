@@ -12,7 +12,7 @@ import Peragraph from '../Container/Peragraph'
 
 const Feature = () => {
     return (
-        <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)] py-25'>
+        <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)] py-25 px-5 lg:px-0'>
             <Container>
 
                 {/* Section Heading */}
@@ -23,7 +23,7 @@ const Feature = () => {
                 />
 
                 {/* Feature Card */}
-                <div className='grid grid-cols-4 gap-7.5 pt-20'>
+                <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7.5 pt-20'>
 
                     {/* Card 1 */}
                     <FeatureCard
@@ -62,7 +62,7 @@ const Feature = () => {
                     <FeatureCard
                         icons={
                             <LuBellRing className='w-6 h-6 group-hover:text-primary duration-300' />}
-                        title={<Heading3 className="text-white pt-20 pb-3">Conference Coordination</Heading3>}
+                        title={<Heading3 className="text-white pt-20 pb-3 text-nowrap">Conference Coordination</Heading3>}
                         peragraph={<Peragraph className='text-white'>Deliver seamless virtual experience
                             with high-quality streaming and
                             interactive tools.</Peragraph>}

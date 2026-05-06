@@ -15,16 +15,16 @@ import Btn from '../Button/Btn'
 
 const Pricing = () => {
     return (
-        <div className='py-25'>
+        <div className='py-25 lg:px-0 px-5'>
             <Container>
                 <SectionHeading2
                     about="Pricing Plan"
                     heading="Discover our flexible pricing plans
                     for attendees"
                     className='justify-center'
-                    classNames='w-184 mx-auto text-center'
+                    classNames='md:w-184 w-full mx-auto text-center'
                 />
-                <div className='grid grid-cols-3 gap-7.5 pt-20 pb-15'>
+                <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7.5 pt-20 pb-15'>
                     <div className='group bg-[#F6F6F7] rounded-[20px] relative overflow-hidden cursor-pointer'>
                         <div className='text-sm font-semibold bg-primary uppercase py-2 px-11 rotate-45 translate-x-3 translate-y-3 absolute -right-6 top-3 hidden group-hover:block transition-all duration-500 ease-out'>Popular</div>
                         <div className='p-2.5'>
@@ -175,7 +175,7 @@ const Pricing = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center justify-center gap-10'>
+                <div className='flex flex-wrap items-center justify-center gap-10'>
                     <div className='flex items-center gap-2.5'>
                         <div>
                             <img src={pricingBenefit} alt="pricingBenefit" />

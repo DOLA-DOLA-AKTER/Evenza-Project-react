@@ -8,7 +8,7 @@ const BlogCard = ({img, icon, peragraph, title, decs, className, imgclass}) => {
     return (
         <div className={`bg-light-gray rounded-[20px] p-2.5 ${className}`}>
             <div className={` ${imgclass} `}>
-                <img src={img} alt="blogImg" className='w-full h-full'/>
+                <img src={img} alt="blogImg" className='md:w-full md:h-full'/>
             </div>
             <div className='p-10'>
                 <div className='flex items-center gap-2.5'>

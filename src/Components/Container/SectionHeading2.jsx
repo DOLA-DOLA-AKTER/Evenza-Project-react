@@ -7,7 +7,7 @@ const SectionHeading2 = ({ heading, about, className, classNames, desc, head }) 
         <div className='w-1.5 h-1.5 rounded-full bg-primary'></div>
         <p className={`text-[14px] text-black font-semibold ${desc}`}>{about}</p>
       </div>
-      <h2 className={`text-2xl md:text-4xl lg:text-[48px] 
+      <h2 className={`lg:text-[48px] md:text-[40px] text-[33px] 
         font-semibold text-black leading-tight md:leading-snug lg:leading-13 tracking-tight pt-2 pb-3 md:pt-2.5 md:pb-4.5 ${classNames}`}>
         {heading}
       </h2>

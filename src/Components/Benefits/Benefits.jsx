@@ -17,9 +17,9 @@ import Phone from '../Container/Phone'
 
 const Benefits = () => {
     return (
-        <div className='py-25'>
+        <div className='py-25 px-5 lg:px-0'>
             <Container>
-                <div className='grid grid-cols-2 gap-10 items-center'>
+                <div className='grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
                     <div>
                         <SectionHeading2
                             about="Key Benefits"
@@ -47,19 +47,19 @@ const Benefits = () => {
 
                     <div className='grid grid-cols-2 gap-0 relative'>
                         <div className='flex flex-col gap-10'>
-                            <div className='w-100 h-100'>
+                            <div className='md:w-100 md:h-100 w-full'>
                                 <img src={benefitsImage} alt="" />
                             </div>
-                            <div className='ml-20'>
+                            <div className='md:ml-20  '>
                                 <img src={benefits3} alt="" />
                             </div>
                         </div>
 
                         <div className='flex flex-col items-end gap-10'>
-                            <div>
+                            <div className=''>
                                 <img src={benefits4} alt="" />
                             </div>
-                            <div className='absolute -bottom-20 -right-10 w-100 h-100'>
+                            <div className='md:absolute md:-bottom-20 md:-right-10 md:w-100 md:h-100 w-full'>
                                 <img src={benefitsImage2} alt="" />
                             </div>
                         </div>

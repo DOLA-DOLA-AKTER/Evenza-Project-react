@@ -15,16 +15,16 @@ import SpeakersCard from './SpeakersCard'
 
 const Speakers = () => {
     return (
-        <div className='py-25'>
+        <div className='py-25 px-5 lg:px-0'>
             <Container>
                 <SectionHeading2
                     about="Our Speakers"
                     heading="Introducing the expert speakers
                 joining our event"
                     className='justify-center'
-                    classNames='w-200 mx-auto text-center'
+                    classNames='md:w-200 w-full mx-auto text-center'
                 />
-                <div className='grid grid-cols-3 gap-7.5 pt-20 pb-16'>
+                <div className='grid md:grid-cols-3 grid-cols-1 gap-7.5 pt-20 pb-16'>
                     <SpeakersCard
                         img={speakers}
                         title='Sophia Rodrigues'

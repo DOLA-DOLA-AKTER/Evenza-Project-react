@@ -10,8 +10,8 @@ import Peragraph from '../Container/Peragraph'
 
 const Image = () => {
   return (
-    <div className='bg-[url(./Components/assets/image.png)] bg-no-repeat bg-center bg-cover w-full h-[800px] relative'>
-      <div className='grid grid-cols-4 items-end h-full'>
+    <div className='bg-[url(./Components/assets/image.png)] bg-no-repeat bg-center bg-cover w-full h-200 relative'>
+      <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-end h-full'>
         <div className='group hover:bg-white/10 h-full flex flex-col justify-end items-start p-6 duration-300 cursor-pointer'>
           <SectionHeading2
             about='Panels'
