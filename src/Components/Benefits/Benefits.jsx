@@ -28,12 +28,14 @@ const Benefits = () => {
                         />
                         <div className='flex flex-col gap-10 py-18'>
                             <IconText 
+                                className="w-25"
                                 icons={benefits}
                                 text="Expert-Led Keynote Sessions"
                                 peragraph="Experience inspiring keynote sessions led by industry experts who share valuable
                                 insights, trends, and strategies to help you grow personally and professionally."
                             />
                             <IconText 
+                                className="w-25"
                                 icons={benefits2}
                                 text="Expert-Led Keynote Sessions"
                                 peragraph="Experience inspiring keynote sessions led by industry experts who share valuable

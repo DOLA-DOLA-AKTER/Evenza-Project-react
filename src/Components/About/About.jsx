@@ -22,7 +22,7 @@ const About = () => {
             <Container>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-11 items-center'>
 
-                    {/* IMAGES */}
+                    {/* images */}
                     <div className="flex flex-col items-center lg:items-start relative">
 
                         <div className='flex flex-col gap-4'>
@@ -35,15 +35,14 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* FLOAT IMAGE */}
-                        <div className=' absolute bottom-0 right-0'>
+                        <div className=' absolute bottom-0 md:right-0 right-10'>
                             <div className='md:w-100 w-60'>
                                 <img src={premium} alt="premium" className='absolute -bottom-18 -right-15' />
                             </div>
                         </div>
                     </div>
 
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col pt-10 lg:pt-0'>
                         <SectionHeading2
                             about="About Us"
                             heading={`Uncover our mission & purpose behind this event`}
@@ -55,7 +54,6 @@ const About = () => {
                             connections.
                         </Peragraph>
 
-                        {/* TABS */}
                         <div className='bg-[#F6F6F7] rounded-xl md:rounded-[20px] p-2 flex flex-wrap justify-center gap-2 sm:gap-4 my-6 md:my-10'>
 
                             <h5 className='hover:bg-white rounded-lg py-3 px-5 sm:px-8 text-black font-bold text-sm sm:text-base transition duration-300 text-center cursor-pointer'>
@@ -77,7 +75,6 @@ const About = () => {
                             fresh thinking, spark inspiring dialogues, and create a space.
                         </Peragraph>
 
-                        {/* ICON TEXT */}
                         <div className='flex flex-col sm:flex-row gap-5 sm:gap-7.5 py-6 md:py-10'>
                             <IconText
                                 icons={receive}

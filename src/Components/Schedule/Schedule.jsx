@@ -19,7 +19,7 @@ const Schedule = () => {
                 our event'
                 className="md:w-187 w-full"
             />
-            <div className='bg-white/10 rounded-full flex items-center justify-center md:gap-7.5 gap-3 md:p-2.5 p-2 md:my-20 my-15 md:w-125 w-full mx-auto'>
+            <div className='bg-white/10 md:rounded-full rounded-xl flex flex-wrap items-center justify-center md:gap-7.5 gap-3 md:p-2.5 p-2 md:my-20 my-15 md:w-125 w-full mx-auto'>
               <h4 className='text-white hover:text-black font-bold md:text-[20px] leading-5.5 hover:bg-white rounded-full md:py-4.5 py-3 md:px-9 px-6 duration-300 cursor-pointer'>Day 01</h4>
               <h4 className='text-white hover:text-black font-bold md:text-[20px] leading-5.5 hover:bg-white rounded-full md:py-4.5 py-3 md:px-9 px-6 duration-300 cursor-pointer'>Day 02</h4>
               <h4 className='text-white hover:text-black font-bold md:text-[20px] leading-5.5 hover:bg-white rounded-full md:py-4.5 py-3 md:px-9 px-6 duration-300 cursor-pointer'>Day 03</h4>
