@@ -25,7 +25,7 @@ const Blog = () => {
                     className='justify-center'
                     classNames='md:w-184 w-full mx-auto text-center'
                 />
-                <div className='grid lg:grid-cols-2 gap-10 items-center pt-20'>
+                <div className='grid lg:grid-cols-2 grid-cols-1 gap-10 items-center pt-20'>
                     <div>
                         <BlogCard
                             img={blogImg}
@@ -37,18 +37,18 @@ const Blog = () => {
                             speakers to captivate and inspire audiences."
                         />
                     </div>
-                    <div className='flex flex-col gap-7.5'>
+                    <div className='flex flex-col  gap-7.5'>
                         <BlogCard
-                            className='flex flex-wrap md:items-center md:justify-center'
-                            imgclass='md:w-160 w-full h-80'
+                            className='flex flex-col md:flex-row md:items-center md:justify-center'
+                            imgclass='md:w-165 w-full h-80'
                             img={blogImg3}
                             icon={pricingBenefit}
                             peragraph='Esther Howard'
                             title="Simple Self-Defense Skills Everyone Should Learn for Safety"
                         />
                         <BlogCard
-                            className='flex flex-wrap md:items-center md:justify-center'
-                            imgclass='md:w-160 w-full h-80'
+                            className='flex flex-col md:flex-row md:items-center md:justify-center'
+                            imgclass='md:w-165 w-full h-80'
                             img={blogImg2}
                             icon={pricingBenefit}
                             peragraph='Esther Howard'
