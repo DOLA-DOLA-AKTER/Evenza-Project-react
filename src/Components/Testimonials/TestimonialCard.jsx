@@ -4,9 +4,11 @@ import { FaStar } from "react-icons/fa";
 import Peragraph from '../Container/Peragraph';
 import Heading3 from '../Container/Heading3';
 
+
+
 const TestimonialCard = ({peragraph, icon, title, decs}) => {
     return (
-        <div className='rounded-[20px] bg-white/10 p-10 cursor-pointer'>
+        <div className='rounded-[20px] bg-white/10 p-10 cursor-pointer m-5 mt-20'>
             <div className='flex items-center gap-1'>
                 <FaStar className='text-primary' />
                 <FaStar className='text-primary' />

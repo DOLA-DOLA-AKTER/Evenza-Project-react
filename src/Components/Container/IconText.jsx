@@ -6,7 +6,7 @@ const IconText = ({ icons, text, peragraph, className }) => {
     return (
         <div className="flex gap-4">
             <div className={`md:w-15 md:h-15 w-9 h-9 rounded ${className}`}>
-                <img src={icons} alt="" className='w-full h-full'/>
+                <img src={icons} alt="" className='w-full h-full md:h-auto'/>
             </div>
             <div className='flex flex-col gap-2'>
                 <Heading3>

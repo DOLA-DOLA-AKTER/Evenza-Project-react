@@ -6,7 +6,7 @@ const Countdown = () => {
     let [count, setCount] = useState({});
     let [timeUp, setTimeUp] = useState(false);
 
-    const conduct_date = '2026-05-06 19:00:00';
+    const conduct_date = '2026-07-06 12:00:00';
 
     useEffect(() => {
 

@@ -4,9 +4,9 @@ import Heading3 from '../Container/Heading3'
 const Accordion = ({title, decs}) => {
   return (
 
-    <div id="accordion-card" data-accordion="collapse" className='bg-[#F6F6F7] rounded-[20px] my-4 cursor-pointer'>
-      <h2 id="accordion-card-heading-1">
-        <button type="button" className="cursor-pointer flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-base shadow-xs border border-default hover:text-heading hover:bg-neutral-secondary-medium gap-3 [&[aria-expanded='true']]:rounded-b-none [&[aria-expanded='true']]:shadow-none" data-accordion-target="#accordion-card-body-1" aria-expanded="true" aria-controls="accordion-card-body-1">
+    <div className='bg-[#F6F6F7] rounded-[20px] my-4 cursor-pointer'>
+      <h2>
+        <button type="button" className="cursor-pointer flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body rounded-base shadow-xs border border-default hover:text-heading hover:bg-neutral-secondary-medium gap-3 [&[aria-expanded='true']]:rounded-b-none [&[aria-expanded='true']]:shadow-none">
           <Heading3 className='md:text-[18px] text-[14px] font-semibold'>{title}</Heading3>
 
           <div className='md:border-3 border-primary rounded-full w-6 h-6 flex items-center justify-center'>
@@ -16,7 +16,8 @@ const Accordion = ({title, decs}) => {
           </div>
         </button>
       </h2>
-      <div id="accordion-card-body-1" className="hidden border border-t-0 border-default rounded-b-base shadow-xs" aria-labelledby="accordion-card-heading-1">
+      
+      <div className="hidden border border-t-0 border-default rounded-b-base shadow-xs">
         <div className="p-4 md:p-5">
           <p className="mb-2 text-body">{decs}</p>
         </div>

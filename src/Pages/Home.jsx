@@ -11,12 +11,14 @@ import Vedio from '../Components/Vedio/Vedio'
 import FAQ from '../Components/FAQ/FAQ'
 import Testimonials from '../Components/Testimonials/Testimonials'
 import Blog from '../Components/Blog/Blog'
+import AutoPlay from '../Components/Banner/AutoPlay'
 
 
 const Home = () => {
   return (
     <div>
       <Banner/>
+      <AutoPlay/>
       <About/>
       <Feature/>
       <Benefits/>
