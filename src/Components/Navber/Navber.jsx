@@ -24,18 +24,18 @@ const Navber = () => {
                         {/* DESKTOP MENU */}
                         <div className='hidden lg:block'>
                             <ul className='text-white text-base flex items-center gap-10'>
-                                <li className='flex items-center gap-1'>
-                                    <NavLink to="/">Home</NavLink>
-                                    <IoIosArrowDown />
+                                <li className='group flex items-center gap-1 duration-300'>
+                                    <NavLink className="group-hover:text-primary duration-300" to="/">Home</NavLink>
+                                    <IoIosArrowDown className='group-hover:text-primary duration-300'/>
                                 </li>
-                                <li><NavLink to="/aboutus">About Us</NavLink></li>
-                                <li><NavLink to="/schedules">Schedule</NavLink></li>
-                                <li><NavLink to="/blogs">Blog</NavLink></li>
-                                <li className='flex items-center gap-1'>
-                                    <NavLink to="/pages">Pages</NavLink>
-                                    <IoIosArrowDown />
+                                <li><NavLink className="hover:text-primary duration-300" to="/aboutus">About Us</NavLink></li>
+                                <li><NavLink className="hover:text-primary duration-300" to="/schedules">Schedule</NavLink></li>
+                                <li><NavLink className="hover:text-primary duration-300" to="/blogs">Blog</NavLink></li>
+                                <li className='group flex items-center gap-1'>
+                                    <NavLink className="group-hover:text-primary duration-300" to="/pages">Pages</NavLink>
+                                    <IoIosArrowDown className='group-hover:text-primary duration-300'/>
                                 </li>
-                                <li><NavLink to="/contactUs">Contact Us</NavLink></li>
+                                <li><NavLink className="hover:text-primary duration-300" to="/contactUs">Contact Us</NavLink></li>
                             </ul>
                         </div>
 
@@ -54,12 +54,12 @@ const Navber = () => {
                     {/* MOBILE MENU */}
                     <div className={`lg:hidden mt-5 transition-all duration-300 ${menuOpen ? 'block' : 'hidden'}`}>
                         <ul className='flex flex-col gap-5 text-white text-base  text-center p-5 rounded-lg backdrop-blur-[10px]'>
-                            <li><NavLink to="/">Home</NavLink></li>
-                            <li><NavLink to="/aboutus">About Us</NavLink></li>
-                            <li><NavLink to="/schedules">Schedule</NavLink></li>
-                            <li><NavLink to="/blogs">Blog</NavLink></li>
-                            <li><NavLink to="/pages">Pages</NavLink></li>
-                            <li><NavLink to="/contactUs">Contact Us</NavLink></li>
+                            <li><NavLink className="hover:text-primary duration-300" to="/">Home</NavLink></li>
+                            <li><NavLink className="hover:text-primary duration-300" to="/aboutus">About Us</NavLink></li>
+                            <li><NavLink className="hover:text-primary duration-300" to="/schedules">Schedule</NavLink></li>
+                            <li><NavLink className="hover:text-primary duration-300" to="/blogs">Blog</NavLink></li>
+                            <li><NavLink className="hover:text-primary duration-300" to="/pages">Pages</NavLink></li>
+                            <li><NavLink className="hover:text-primary duration-300" to="/contactUs">Contact Us</NavLink></li>
                             <Btn className="mt-3">Join the Conference</Btn>
                         </ul>
                     </div>

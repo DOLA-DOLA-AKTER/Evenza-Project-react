@@ -45,8 +45,7 @@ const FAQ = () => {
                         />
                         <Accordion
                             title="2. Where is the main event venue located precisely?"
-                            decs="Our event is designed with flexible scheduling, allowing you to move between halls, select sessions that
-                            interest you most, and customize your learning experience throughout the day."
+                            decs="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis facere reiciendis ab aperiam perspiciatis architecto id vero impedit est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis facere reiciendis ab aperiam perspiciatis architecto id vero impedit est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis facere reiciendis ab aperiam perspiciatis architecto id vero impedit est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis facere reiciendis ab aperiam perspiciatis architecto id vero impedit est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis facere reiciendis ab aperiam perspiciatis architecto id vero impedit est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis facere reiciendis ab aperiam perspiciatis architecto id vero impedit est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis facere reiciendis ab aperiam perspiciatis architecto id vero impedit est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis facere reiciendis ab aperiam perspiciatis architecto id vero impedit est!"
                         />
                         <Accordion
                             title="3. Can attendees freely switch between sessions and tracks?"
@@ -55,8 +54,7 @@ const FAQ = () => {
                         />
                         <Accordion
                             title="4. Does the event provide virtual participation options online?"
-                            decs="Our event is designed with flexible scheduling, allowing you to move between halls, select sessions that
-                            interest you most, and customize your learning experience throughout the day."
+                            decs="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque officiis facere reiciendis ab aperiam perspiciatis architecto id vero impedit est!"
                         />
                         <Accordion
                             title="5. What is the event refund and cancellation policy?"

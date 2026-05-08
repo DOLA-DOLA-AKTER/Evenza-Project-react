@@ -1,6 +1,4 @@
 @import "tailwindcss";
-@import "flowbite-react/plugin/tailwindcss";
-@source "../.flowbite-react/class-list.json";
 
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 
