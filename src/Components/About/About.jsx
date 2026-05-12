@@ -14,6 +14,7 @@ import Btn from '../Button/Btn'
 import SectionHeading2 from '../Container/SectionHeading2'
 import IconText from '../Container/IconText'
 import Phone from '../Container/Phone'
+import AboutTabs from './AboutTabs'
 
 
 const About = () => {
@@ -54,27 +55,8 @@ const About = () => {
                             connections.
                         </Peragraph>
 
-                        <div className='bg-[#F6F6F7] rounded-xl md:rounded-[20px] p-2 flex flex-wrap justify-center gap-2 sm:gap-4 my-6 md:my-10'>
-
-                            <h5 className='hover:bg-white rounded-lg py-3 px-5 sm:px-8 text-black font-bold text-sm sm:text-base transition duration-300 text-center cursor-pointer'>
-                                Our Mission
-                            </h5>
-
-                            <h5 className='hover:bg-white rounded-lg py-3 px-5 sm:px-8 text-black font-bold text-sm sm:text-base transition duration-300 text-center cursor-pointer'>
-                                Our Vision
-                            </h5>
-
-                            <h5 className='hover:bg-white rounded-lg py-3 px-5 sm:px-8 text-black font-bold text-sm sm:text-base transition duration-300 text-center cursor-pointer'>
-                                Our Goal
-                            </h5>
-
-                        </div>
-
-                        <Peragraph>
-                            Our vision is to build a global community where collaboration fuels innovation we aim encourage
-                            fresh thinking, spark inspiring dialogues, and create a space.
-                        </Peragraph>
-
+                        <AboutTabs/>
+                
                         <div className='flex flex-col sm:flex-row gap-5 sm:gap-7.5 py-6 md:py-10'>
                             <IconText
                                 icons={receive}
@@ -91,6 +73,7 @@ const About = () => {
                         </Phone>
 
                     </div>
+
                 </div>
             </Container>
         </div>
