@@ -29,7 +29,7 @@ const Banner = () => {
             <p className='text-xs md:text-sm font-semibold'>
               Ideas that spark change.
             </p>
-          </div>
+          </div> 
 
           {/* HEADING */}
           <div className='mt-6'>
@@ -38,7 +38,7 @@ const Banner = () => {
               Tomorrow's Big Ideas
             </h1>
 
-            <p className='text-sm md:text-base leading-6 w-full lg:w-[750px] mx-auto pt-4 pb-8'>
+            <p className='text-sm md:text-base leading-6 w-full lg:w-187.5 mx-auto pt-4 pb-8'>
               Experience a powerful gathering of visionaries, creators, and industry experts united by one goal—
               exchanging ideas that spark growth, innovation, and meaningful change.
             </p>

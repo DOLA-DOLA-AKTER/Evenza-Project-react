@@ -32,6 +32,7 @@ const Home = () => {
       <Blog/>
     </div>
   )
+  
 }
 
 export default Home
