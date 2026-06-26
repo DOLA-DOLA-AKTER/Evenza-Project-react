@@ -1,10 +1,8 @@
 import React from 'react'
-
 // assets
 import rightArrow from '../assets/right_arrow.png'
-
 // Components
-import SectionHeading2 from '../Container/SectionHeading2'
+import SectionHeading2 from '../Container/SectionHeading'
 import Heading3 from '../Container/Heading3'
 import Peragraph from '../Container/Peragraph'
 

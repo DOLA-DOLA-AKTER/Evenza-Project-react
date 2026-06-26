@@ -4,7 +4,7 @@ import Container from '../Container/Container'
 import faqsImage from '../assets/faqs-image.png'
 import Heading3 from '../Container/Heading3'
 import Peragraph from '../Container/Peragraph'
-import SectionHeading2 from '../Container/SectionHeading2'
+import SectionHeading2 from '../Container/SectionHeading'
 import Accordion from './Accordion'
 
 const FAQ = () => {

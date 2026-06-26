@@ -18,28 +18,54 @@ const AutoPlay = () => {
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 1000,
-    cssEase: "linear"
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          speed: 4000,
+        },
+      },
+    ],
   };
   return (
-    <div className='py-5 bg-primary w-full overflow-x-hidden'>
+    <div className="py-2 md:py-3 lg:py-5 bg-primary w-full overflow-hidden">
       <Slider {...settings}>
         <div>
-          <img src={slider1} alt="" />
+          <img src={slider1} alt="" className="w-50 md:w-60 lg:w-auto h-auto" />
         </div>
+
         <div>
-          <img src={slider2} alt="" />
+          <img src={slider2} alt="" className="w-50 md:w-60 lg:w-auto h-auto" />
         </div>
+
         <div>
-          <img src={slider3} alt="" />
+          <img src={slider3} alt="" className="w-50 md:w-60 lg:w-auto h-auto" />
         </div>
+
         <div>
-          <img src={slider4} alt="" />
+          <img src={slider4} alt="" className="w-50 md:w-60 lg:w-auto h-auto" />
         </div>
+
         <div>
-          <img src={slider5} alt="" />
+          <img src={slider5} alt="" className="w-50 md:w-60 lg:w-auto h-auto" />
         </div>
+
         <div>
-          <img src={slider6} alt="" />
+          <img src={slider6} alt="" className="w-50 md:w-60 lg:w-auto h-auto" />
         </div>
       </Slider>
     </div>

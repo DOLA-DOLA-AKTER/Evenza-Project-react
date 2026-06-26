@@ -1,7 +1,7 @@
 import React from 'react'
 import supportsLogo from '../assets/supports-logo.png'
 import Container from '../Container/Container'
-import SectionHeading from '../Container/SectionHeading'
+import SectionHeading from '../Container/SecHeading'
 import Peragraph from '../Container/Peragraph'
 import Testimonialslider from './Testimonialslider'
 

@@ -7,7 +7,7 @@ import blogImg3 from '../assets/blog-img3.png'
 import pricingBenefit from '../assets/pricing-benefit.png'
 
 // Components
-import SectionHeading2 from '../Container/SectionHeading2'
+import SectionHeading2 from '../Container/SectionHeading'
 import Peragraph from '../Container/Peragraph'
 import Heading3 from '../Container/Heading3'
 import Container from '../Container/Container'

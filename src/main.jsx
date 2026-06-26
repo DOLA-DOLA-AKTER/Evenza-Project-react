@@ -19,6 +19,7 @@ import Pricing from './Components/Pricing/Pricing.jsx';
 import Testimonials from './Components/Testimonials/Testimonials.jsx';
 import FAQ from './Components/FAQ/FAQ.jsx';
 import Video from './Components/Video/Video.jsx';
+import Image from './Components/Image/Image.jsx';
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,7 @@ const router = createBrowserRouter([
       { path: "faq", Component: FAQ },
       { path: "video", Component: Video },
       { path: "testimonials", Component: Testimonials },
+      { path: "image", Component: Image },
       
     ],
   },

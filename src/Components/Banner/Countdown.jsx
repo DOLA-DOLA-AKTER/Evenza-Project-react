@@ -41,25 +41,25 @@ const Countdown = () => {
                 timeUp ?
                     <h2 className='text-red-500 text-3xl font-semibold'>Time's Up</h2>
                     :
-                    <div className='flex flex-wrap items-center gap-7.5' >
-                        <div className='rounded-[20px] backdrop-blur-[20px] md:w-31.25 md:h-30 w-22 h-21 flex flex-col items-center justify-center bg-white-opacity'>
-                            <h3 className='md:text-[40px] text-3xl font-bold'>{count.days}</h3>
-                            <Peragraph className='text-white'>Days</Peragraph>
+                    <div className='flex flex-wrap items-center gap-3 md:gap-7.5'>
+                        <div className='rounded-[20px] backdrop-blur-[20px] w-18 h-18 md:w-31.25 md:h-30 flex flex-col items-center justify-center bg-white-opacity'>
+                            <h3 className='text-2xl md:text-[40px] font-bold'>{count.days}</h3>
+                            <Peragraph className='text-white text-xs md:text-base'>Days</Peragraph>
                         </div>
 
-                        <div className='rounded-[20px] backdrop-blur-[20px] md:w-31.25 md:h-30 w-22 h-21 flex flex-col items-center justify-center bg-white-opacity'>
-                            <h3 className='md:text-[40px] text-3xl font-bold'>{count.hours}</h3>
-                            <Peragraph className='text-white'>Hours</Peragraph>
+                        <div className='rounded-[20px] backdrop-blur-[20px] w-18 h-18 md:w-31.25 md:h-30 flex flex-col items-center justify-center bg-white-opacity'>
+                            <h3 className='text-2xl md:text-[40px] font-bold'>{count.hours}</h3>
+                            <Peragraph className='text-white text-xs md:text-base'>Hours</Peragraph>
                         </div>
 
-                        <div className='rounded-[20px] backdrop-blur-[20px] md:w-31.25 md:h-30 w-22 h-21 flex flex-col items-center justify-center bg-white-opacity'>
-                            <h3 className='md:text-[40px] text-3xl font-bold'>{count.minutes}</h3>
-                            <Peragraph className='text-white'>Minutes</Peragraph>
+                        <div className='rounded-[20px] backdrop-blur-[20px] w-18 h-18 md:w-31.25 md:h-30 flex flex-col items-center justify-center bg-white-opacity'>
+                            <h3 className='text-2xl md:text-[40px] font-bold'>{count.minutes}</h3>
+                            <Peragraph className='text-white text-xs md:text-base'>Minutes</Peragraph>
                         </div>
 
-                        <div className='rounded-[20px] backdrop-blur-[20px] md:w-31.25 md:h-30 w-22 h-21 flex flex-col items-center justify-center bg-white-opacity'>
-                            <h3 className='md:text-[40px] text-3xl font-bold'>{count.seconds}</h3>
-                            <Peragraph className='text-white'>Seconds</Peragraph>
+                        <div className='rounded-[20px] backdrop-blur-[20px] w-18 h-18 md:w-31.25 md:h-30 flex flex-col items-center justify-center bg-white-opacity'>
+                            <h3 className='text-2xl md:text-[40px] font-bold'>{count.seconds}</h3>
+                            <Peragraph className='text-white text-xs md:text-base'>Seconds</Peragraph>
                         </div>
                     </div>
             }

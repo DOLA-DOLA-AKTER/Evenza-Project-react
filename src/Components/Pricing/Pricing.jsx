@@ -8,7 +8,7 @@ import pricingBenefit from '../assets/pricing-benefit.png'
 // Components
 import IconText from '../Container/IconText'
 import Container from '../Container/Container'
-import SectionHeading2 from '../Container/SectionHeading2'
+import SectionHeading2 from '../Container/SectionHeading'
 import Peragraph from '../Container/Peragraph'
 import Heading3 from '../Container/Heading3'
 import Btn from '../Button/Btn'

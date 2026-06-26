@@ -6,11 +6,13 @@ import border from '../assets/border.png'
 import border1 from '../assets/border1.png'
 import border2 from '../assets/border2.png'
 import Countdown from './Countdown';
+import { NavLink } from "react-router";
+
 
 const Banner = () => {
   return (
     <div className='bg-[url(./Components/assets/background.png)] bg-no-repeat bg-center bg-cover w-full pt-35 pb-16 md:pt-40 md:pb-24 lg:pt-62.5 lg:pb-37'>
-      <Container>
+      <Container className="lg:py-0! py-0!">
         <div className='flex flex-col items-center justify-center text-center  px-5 lg:px-0'>
 
           {/* TOP BADGE */}
@@ -29,7 +31,7 @@ const Banner = () => {
             <p className='text-xs md:text-sm font-semibold'>
               Ideas that spark change.
             </p>
-          </div> 
+          </div>
 
           {/* HEADING */}
           <div className='mt-6'>
@@ -45,9 +47,9 @@ const Banner = () => {
           </div>
 
           <div className='flex flex-col sm:flex-row items-center gap-5 sm:gap-10'>
-            <Btn>Explore Schedule</Btn>
+            <Btn><NavLink to="/schedules">Explore Schedule</NavLink> </Btn>
 
-            <div className='flex items-center gap-4'>
+            <NavLink to="/video" className='flex items-center gap-4'>
               <div className='p-1 rounded-full bg-white/20 cursor-pointer'>
                 <div className='p-2 rounded-full bg-primary'>
                   <FaPlay className='w-3 h-3 text-white' />
@@ -56,7 +58,8 @@ const Banner = () => {
               <h5 className='text-sm md:text-base font-bold'>
                 Watch Video
               </h5>
-            </div>
+            </NavLink>
+
           </div>
 
           {/* TEXT */}

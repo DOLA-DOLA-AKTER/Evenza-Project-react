@@ -8,7 +8,7 @@ import benefits3 from '../assets/benefits3.png'
 import benefits4 from '../assets/benefits4.png'
 
 // Components
-import SectionHeading2 from '../Container/SectionHeading2'
+import SectionHeading2 from '../Container/SectionHeading'
 import Container from '../Container/Container'
 import IconText from '../Container/IconText'
 import Peragraph from '../Container/Peragraph'

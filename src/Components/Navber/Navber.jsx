@@ -15,7 +15,7 @@ const Navber = () => {
     return (
         <header className='backdrop-blur-[10px] fixed top-0 left-0 z-50 w-full'>
             <nav className='py-6 bg-white/10 px-5 lg:px-0'>
-                <Container>
+                <Container className="lg:py-0! py-0!">
                     <div className='flex justify-between items-center'>
 
                         {/* LOGO */}
@@ -77,12 +77,7 @@ const Navber = () => {
                                         <IoIosArrowDown className='group-hover:text-primary duration-300 group-hover:rotate-180' />
                                     </div>
                                     <ul className="absolute top-full left-0 mt-2 w-40 bg-primary shadow-lg invisible group-hover:visible duration-300 z-50">
-                                        <li className='w-full'>
-                                            <NavLink
-                                                to="/"
-                                                className="block px-4 py-2 hover:bg-white hover:text-black">Home
-                                            </NavLink>
-                                        </li>
+
                                         <li className='w-full'>
                                             <NavLink
                                                 to="/speakers"
@@ -110,7 +105,7 @@ const Navber = () => {
 
                         {/* BUTTON */}
                         <div className='hidden lg:block'>
-                            <Btn>Join the Conference</Btn>
+                            <Btn><NavLink to="/Image">Join the Conference</NavLink></Btn>
                         </div>
 
                         {/* MENU ICON */}
@@ -183,12 +178,6 @@ const Navber = () => {
                                     (<ul className="mt-2 bg-primary rounded-md duration-300">
                                         <li className='w-full'>
                                             <NavLink
-                                                to="/"
-                                                className="block px-4 py-2 hover:bg-white hover:text-black">Home
-                                            </NavLink>
-                                        </li>
-                                        <li className='w-full'>
-                                            <NavLink
                                                 to="/speakers"
                                                 className="block px-4 py-2 hover:bg-white hover:text-black">Speakers
                                             </NavLink>
@@ -209,7 +198,7 @@ const Navber = () => {
                                     </ul>)}
                             </li>
                             <li><NavLink className="hover:text-primary duration-300" to="/contactUs">Contact Us</NavLink></li>
-                            <Btn className="mt-3">Join the Conference</Btn>
+                            <Btn className="mt-3"> <NavLink to="/Image">Join the Conference</NavLink> </Btn>
                         </ul>
                     </div>
                 </Container>

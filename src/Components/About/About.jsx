@@ -11,15 +11,15 @@ import Container from '../Container/Container'
 import Peragraph from '../Container/Peragraph'
 import Heading3 from '../Container/Heading3'
 import Btn from '../Button/Btn'
-import SectionHeading2 from '../Container/SectionHeading2'
 import IconText from '../Container/IconText'
 import Phone from '../Container/Phone'
 import AboutTabs from './AboutTabs'
+import SectionHeading from '../Container/SectionHeading'
 
 
 const About = () => {
     return (
-        <div className='py-12 md:py-16 lg:py-25 px-5 lg:px-0'>
+        <div>
             <Container>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-11 items-center'>
 
@@ -44,9 +44,9 @@ const About = () => {
                     </div>
 
                     <div className='flex flex-col pt-10 lg:pt-0'>
-                        <SectionHeading2
-                            about="About Us"
-                            heading={`Uncover our mission & purpose behind this event`}
+                        <SectionHeading
+                            peragraph="About Us"
+                            heading='Uncover our mission & purpose behind this event'
                         />
 
                         <Peragraph>
@@ -56,7 +56,7 @@ const About = () => {
                         </Peragraph>
 
                         <AboutTabs/>
-                
+
                         <div className='flex flex-col sm:flex-row gap-5 sm:gap-7.5 py-6 md:py-10'>
                             <IconText
                                 icons={receive}

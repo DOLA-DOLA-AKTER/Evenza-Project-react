@@ -3,10 +3,10 @@ import { FaStar } from "react-icons/fa";
 import { LuBellRing } from "react-icons/lu";
 
 import Container from '../Container/Container'
-import Circle from '../Container/SectionHeading2'
+import Circle from '../Container/SectionHeading'
 import Heading from '../Container/Heading'
 import FeatureCard from './FeatureCard'
-import SectionHeading from '../Container/SectionHeading'
+import SectionHeading from '../Container/SecHeading'
 import Heading3 from '../Container/Heading3'
 import Peragraph from '../Container/Peragraph'
 

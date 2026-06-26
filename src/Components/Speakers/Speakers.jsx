@@ -9,8 +9,8 @@ import phone2 from '../assets/phone2.png'
 
 // Components
 import Container from '../Container/Container'
-import SectionHeading from '../Container/SectionHeading'
-import SectionHeading2 from '../Container/SectionHeading2'
+import SectionHeading from '../Container/SecHeading'
+import SectionHeading2 from '../Container/SectionHeading'
 import SpeakersCard from './SpeakersCard'
 
 const Speakers = () => {

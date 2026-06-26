@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // Components
 import Container from '../Container/Container'
-import SectionHeading from '../Container/SectionHeading'
+import SectionHeading from '../Container/SecHeading'
 import Heading3 from '../Container/Heading3'
 import Peragraph from '../Container/Peragraph'
 import Tabs from './Tabs'
@@ -72,6 +72,7 @@ const Schedule = () => {
         </div>
 
         <div> {renderActiveDay()} </div>
+
 
       </Container>
     </div>
