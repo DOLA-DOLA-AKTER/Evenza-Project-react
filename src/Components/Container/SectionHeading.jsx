@@ -19,3 +19,4 @@ const SectionHeading = ({ secheading, className, circle, peragraphCSS, peragraph
 
 export default SectionHeading
 
+

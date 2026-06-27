@@ -8,21 +8,22 @@ import benefits3 from '../assets/benefits3.png'
 import benefits4 from '../assets/benefits4.png'
 
 // Components
-import SectionHeading2 from '../Container/SectionHeading'
 import Container from '../Container/Container'
 import IconText from '../Container/IconText'
 import Peragraph from '../Container/Peragraph'
 import Phone from '../Container/Phone'
+import SectionHeading from '../Container/SectionHeading'
+import { NavLink } from 'react-router'
 
 
 const Benefits = () => {
     return (
-        <div className='py-25 px-5 lg:px-0'>
+        <div>
             <Container>
                 <div className='grid md:grid-cols-2 grid-cols-1 gap-10 items-center'>
                     <div>
-                        <SectionHeading2
-                            about="Key Benefits"
+                        <SectionHeading
+                            peragraph="Key Benefits"
                             heading="Key advantages that ensure
                             your events stand out"
                         />
@@ -42,9 +43,7 @@ const Benefits = () => {
                                 insights, trends, and strategies to help you grow personally and professionally."
                             />
                         </div>
-                        <Phone
-                            children='View Our Schedule'
-                        />
+                        <Phone><NavLink to="/schedules">View Our Schedule</NavLink></Phone>
                     </div>
 
                     <div className='grid grid-cols-2 gap-0 relative'>

@@ -9,21 +9,21 @@ import phone2 from '../assets/phone2.png'
 
 // Components
 import Container from '../Container/Container'
-import SectionHeading from '../Container/SecHeading'
-import SectionHeading2 from '../Container/SectionHeading'
 import SpeakersCard from './SpeakersCard'
+import SectionHeading from '../Container/SectionHeading'
 
 const Speakers = () => {
     return (
-        <div className='py-25 px-5 lg:px-0'>
+        <div>
             <Container>
-                <SectionHeading2
-                    about="Our Speakers"
-                    heading="Introducing the expert speakers
-                joining our event"
-                    className='justify-center'
-                    classNames='md:w-200 w-full mx-auto text-center'
-                />
+                <div className='md:w-175 w-full block mx-auto text-center'>
+                    <SectionHeading
+                    secheading='flex flex-col items-center'
+                    peragraph="Our Speakers"
+                    heading='Introducing the expert speakers
+                joining our event'
+                    />
+                </div>
                 <div className='grid md:grid-cols-3 grid-cols-1 gap-7.5 pt-20 pb-16'>
                     <SpeakersCard
                         img={speakers}
@@ -46,7 +46,7 @@ const Speakers = () => {
                 </div>
                 <div className='flex items-center justify-center gap-4 '>
                     <div className='flex items-center'>
-                        <div className='relative -z-0 '>
+                        <div className='relative z-0 '>
                             <img src={border} alt="border" className='w-8 h-8' />
                         </div>
                         <div className='-ml-3 z-10'>

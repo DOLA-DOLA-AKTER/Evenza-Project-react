@@ -44,7 +44,7 @@ const AboutTabs = () => {
     };
 
     return (
-        <Box sx={{ width: '100%' }}>
+        <Box sx={{ width: '100%', height: '250px'}}>
             <Box className='bg-[#F6F6F7] rounded-xl md:rounded-[20px] p-2 flex flex-wrap justify-center gap-2 sm:gap-4 mt-6 md:mt-10'>
                 <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" 
                     sx={{
@@ -56,63 +56,19 @@ const AboutTabs = () => {
                     <Tab
                         label="Our Mission"
                         {...a11yProps(0)}
-                        sx={{
-                            padding: "12px 20px",
-                            margin: "0px 5px",
-                            borderRadius: "10px",
-                            fontWeight: "bold",
-                            color: "black",
-                            "&:hover": {
-                                backgroundColor: "white",
-                                opacity: "70%",
-                                color: "black",
-                            },
-                            "&.Mui-selected": {
-                                backgroundColor: "white",
-                                color: "black",
-                            },
-                        }}
+                        className='py-3 px-5 mx-1 rounded-md! font-bold! text-black! hover:bg-white/70! hover:text-black! focus:bg-white!'
                     />
 
                     <Tab
                         label="Our Vision"
                         {...a11yProps(1)}
-                        sx={{
-                            padding: "12px 20px",
-                            margin: "0px 5px",
-                            borderRadius: "10px",
-                            fontWeight: "bold",
-                            color: "black",
-                            "&:hover": {
-                                opacity: "70%",
-                                backgroundColor: "white",
-                                color: "black",
-                            },
-                            "&.Mui-selected": {
-                                backgroundColor: "white",
-                                color: "black",
-                            },
-                        }}
+                        className='py-3 px-5 mx-1 rounded-md! font-bold! text-black! hover:bg-white/70! hover:text-black! focus:bg-white!'
                     />
 
                     <Tab
                         label="Our Goal"
                         {...a11yProps(2)}
-                        sx={{
-                            padding: "12px 20px",
-                            margin: "0px 5px",
-                            borderRadius: "10px",
-                            fontWeight: "bold",
-                            color: "black",
-                            "&:hover": {
-                                backgroundColor: "white",
-                                color: "black",
-                            },
-                            "&.Mui-selected": {
-                                backgroundColor: "white",
-                                color: "black",
-                            },
-                        }}
+                        className='py-3 px-5 mx-1 rounded-md! font-bold! text-black! hover:bg-white/70! hover:text-black! focus:bg-white!'
                     />
                 </Tabs>
             </Box>

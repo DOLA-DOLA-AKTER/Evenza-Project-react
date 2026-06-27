@@ -8,22 +8,22 @@ import pricingBenefit from '../assets/pricing-benefit.png'
 // Components
 import IconText from '../Container/IconText'
 import Container from '../Container/Container'
-import SectionHeading2 from '../Container/SectionHeading'
 import Peragraph from '../Container/Peragraph'
 import Heading3 from '../Container/Heading3'
 import Btn from '../Button/Btn'
+import SectionHeading from '../Container/SectionHeading'
 
 const Pricing = () => {
     return (
-        <div className='py-25 lg:px-0 px-5'>
+        <div>
             <Container>
-                <SectionHeading2
-                    about="Pricing Plan"
-                    heading="Discover our flexible pricing plans
-                    for attendees"
-                    className='justify-center'
-                    classNames='md:w-184 w-full mx-auto text-center'
-                />
+                <div className='md:w-184 w-full block mx-auto text-center'>
+                    <SectionHeading
+                        secheading='flex flex-col items-center'
+                        peragraph="Pricing Plan"
+                        heading='Discover our flexible pricing plans for attendees'
+                    />
+                </div>
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7.5 pt-20 pb-15'>
                     <div className='group bg-[#F6F6F7] rounded-[20px] relative overflow-hidden cursor-pointer'>
                         <div className='text-sm font-semibold bg-primary uppercase py-2 px-11 rotate-45 translate-x-3 translate-y-3 absolute -right-6 top-3 hidden group-hover:block transition-all duration-500 ease-out'>Popular</div>

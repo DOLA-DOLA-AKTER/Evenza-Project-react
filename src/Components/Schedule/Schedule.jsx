@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 // Components
 import Container from '../Container/Container'
-import SectionHeading from '../Container/SecHeading'
-import Heading3 from '../Container/Heading3'
-import Peragraph from '../Container/Peragraph'
+import SectionHeading from '../Container/SectionHeading'
 import Tabs from './Tabs'
 import Tabs2 from './Tabs2'
 import Tabs3 from './Tabs3'
+
 
 const Schedule = () => {
 
@@ -23,19 +22,24 @@ const Schedule = () => {
   }
 
   return (
-    <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)] py-25 lg:px-0 px-5'>
+    <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)]'>
       <Container>
-        <SectionHeading
-          peragraph='Our Event Schedule'
-          title='Explore the complete schedule for
+        <div className='md:w-187 w-full block mx-auto text-center'>
+          <SectionHeading
+            secheading='flex flex-col items-center'
+            peragraph="Our Event Schedule"
+            heading='Explore the complete schedule for
                 our event'
-          className="md:w-187 w-full"
-        />
+            circle='bg-white'
+            peragraphCSS='text-white'
+            headingCSS='text-white'
+          />
+        </div>
         <div className='bg-white/10 md:rounded-full rounded-xl flex flex-wrap items-center justify-center gap-7.5  md:p-2.5 p-2 md:my-20 my-15 md:w-125 w-full mx-auto'>
 
           <h4
             onClick={() => setActiveDay("Day 01")}
-            className={`font-bold md:text-[20px] leading-5.5 rounded-full md:py-4.5 py-3 md:px-9 px-6 duration-300 cursor-pointer
+            className={`font-bold md:text-[20px] leading-5.5 rounded-full md:py-4.5 py-3 md:px-9 px-6 duration-300 cursor-pointer 
     
               ${activeDay === "Day 01"
                 ? "bg-white text-black"

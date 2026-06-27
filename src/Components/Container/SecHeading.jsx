@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SectionHeading = ({peragraph, title, className}) => {
+const SecHeading = ({peragraph, title, className}) => {
     return (
         <div>
             <div className='flex items-center justify-center gap-2.25'>
@@ -14,5 +14,6 @@ const SectionHeading = ({peragraph, title, className}) => {
     )
 }
 
-export default SectionHeading
+export default SecHeading
+
 

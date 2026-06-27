@@ -2,18 +2,18 @@ import React from 'react'
 // assets
 import rightArrow from '../assets/right_arrow.png'
 // Components
-import SectionHeading2 from '../Container/SectionHeading'
 import Heading3 from '../Container/Heading3'
 import Peragraph from '../Container/Peragraph'
+import SectionHeading from '../Container/SectionHeading'
 
 const Image = () => {
   return (
     <div className='bg-[url(./Components/assets/image.png)] bg-no-repeat bg-center bg-cover w-full h-200 relative'>
       <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-end h-full'>
         <div className='group hover:bg-white/10 h-full flex flex-col justify-end items-start p-6 duration-300 cursor-pointer'>
-          <SectionHeading2
-            about='Panels'
-            desc='text-white '
+          <SectionHeading
+            peragraph='Panels'
+            peragraphCSS='text-white '
           />
           <Heading3 className='text-white '>
             Interactive Panel Discussions
@@ -24,7 +24,7 @@ const Image = () => {
             leaders, innovators.
           </Peragraph>
 
-          <div className='flex items-center gap-2.25 
+          <div className='items-center gap-2.25 
           hidden group-hover:flex duration-300'>
             <p className='text-base font-bold leading-6 text-white'>
               Read More
@@ -36,9 +36,9 @@ const Image = () => {
         </div>
 
         <div className='group hover:bg-white/10 h-full flex flex-col justify-end items-start p-6 duration-300 cursor-pointer'>
-          <SectionHeading2
-            about='Networking'
-            desc='text-white '
+          <SectionHeading
+            peragraph='Networking'
+            peragraphCSS='text-white '
           />
           <Heading3 className='text-white '>
             Connect With Top Professionals
@@ -49,7 +49,7 @@ const Image = () => {
             leaders, innovators.
           </Peragraph>
 
-          <div className='flex items-center gap-2.25 
+          <div className=' items-center gap-2.25 
           hidden group-hover:flex duration-300'>
             <p className='text-base font-bold leading-6 text-white'>
               Read More
@@ -61,9 +61,9 @@ const Image = () => {
         </div>
 
         <div className='group hover:bg-white/10 h-full flex flex-col justify-end items-start p-6 duration-300 cursor-pointer'>
-          <SectionHeading2
-            about='Resources'
-            desc='text-white '
+          <SectionHeading
+            peragraph='Resources'
+            peragraphCSS='text-white '
           />
           <Heading3 className='text-white '>
             Exclusive Access Event Material
@@ -74,7 +74,7 @@ const Image = () => {
             leaders, innovators.
           </Peragraph>
 
-          <div className='flex items-center gap-2.25 
+          <div className=' items-center gap-2.25 
           hidden group-hover:flex duration-300'>
             <p className='text-base font-bold leading-6 text-white'>
               Read More
@@ -86,9 +86,9 @@ const Image = () => {
         </div>
 
         <div className='group hover:bg-white/10 h-full flex flex-col justify-end items-start p-6 duration-300 cursor-pointer'>
-          <SectionHeading2
-            about='Updates'
-            desc='text-white '
+          <SectionHeading
+            peragraph='Updates'
+            peragraphCSS='text-white '
           />
           <Heading3 className='text-white '>
             Real-Time Event Announcement
@@ -99,7 +99,7 @@ const Image = () => {
             leaders, innovators.
           </Peragraph>
 
-          <div className='flex items-center gap-2.25 
+          <div className=' items-center gap-2.25 
           hidden group-hover:flex duration-300'>
             <p className='text-base font-bold leading-6 text-white'>
               Read More

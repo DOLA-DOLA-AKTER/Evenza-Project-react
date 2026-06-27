@@ -28,17 +28,13 @@ const Navber = () => {
                             <ul className='text-white text-base flex items-center gap-10'>
                                 <li className='group relative'>
                                     <div className='flex items-center gap-1 duration-300'>
-                                        <a href="#"
-                                        className="group-hover:text-primary duration-300">Home</a>
+                                        <NavLink
+                                            to="/"
+                                            className="hover:text-primary duration-300">Home
+                                        </NavLink>
                                         <IoIosArrowDown className='group-hover:text-primary duration-300 group-hover:rotate-180' />
                                     </div>
-                                    <ul className="absolute top-full left-0 mt-2 w-40 bg-primary shadow-lg invisible group-hover:visible duration-300 z-50">
-                                        <li className='w-full'>
-                                            <NavLink
-                                                to="/"
-                                                className="block px-4 py-2 hover:bg-white hover:text-black">Home
-                                            </NavLink>
-                                        </li>
+                                    <ul className="absolute top-full left-0 mt-2 w-40 bg-primary shadow-lg invisible group-hover:visible duration-300 z-50 rounded-md">
                                         <li className='w-full'>
                                             <NavLink
                                                 to="/feature"
@@ -73,10 +69,10 @@ const Navber = () => {
                                 <li className='relative group'>
                                     <div className='flex items-center gap-1'>
                                         <a href="#"
-                                        className="group-hover:text-primary duration-300">Pages</a>
+                                            className="group-hover:text-primary duration-300">Pages</a>
                                         <IoIosArrowDown className='group-hover:text-primary duration-300 group-hover:rotate-180' />
                                     </div>
-                                    <ul className="absolute top-full left-0 mt-2 w-40 bg-primary shadow-lg invisible group-hover:visible duration-300 z-50">
+                                    <ul className="absolute top-full left-0 mt-2 w-40 bg-primary shadow-lg invisible group-hover:visible duration-300 z-50 rounded-md">
 
                                         <li className='w-full'>
                                             <NavLink
@@ -87,7 +83,7 @@ const Navber = () => {
                                         <li className='w-full'>
                                             <NavLink
                                                 to="/pricing "
-                                                className="block px-4 py-2 hover:bg-white hover:text-black">Pricing 
+                                                className="block px-4 py-2 hover:bg-white hover:text-black">Pricing
                                             </NavLink>
                                         </li>
                                         <li className='w-full'>
@@ -96,7 +92,7 @@ const Navber = () => {
                                                 className="block px-4 py-2 hover:bg-white hover:text-black">FAQ
                                             </NavLink>
                                         </li>
-                            
+
                                     </ul>
                                 </li>
                                 <li><NavLink className="hover:text-primary duration-300" to="/contactUs">Contact Us</NavLink></li>
@@ -123,18 +119,14 @@ const Navber = () => {
                                 <div
                                     onClick={() => setHomeDropdown(!homeDropdown)}
                                     className='group flex items-center justify-center gap-1 duration-300'>
-                                    <a href="#"
-                                        className="group-hover:text-primary duration-300">Home</a>
+                                    <NavLink
+                                            to="/"
+                                            className="group-hover:text-primary duration-300">Home
+                                        </NavLink>
                                     <IoIosArrowDown className={`group-hover:text-primary duration-300 ${homeDropdown ? "rotate-180" : ""}`} />
                                 </div>
                                 {homeDropdown &&
                                     (<ul className="mt-2 rounded-md bg-primary">
-                                        <li className='w-full'>
-                                            <NavLink
-                                                to="/"
-                                                className="block px-4 py-2 hover:bg-white hover:text-black">Home
-                                            </NavLink>
-                                        </li>
                                         <li className='w-full'>
                                             <NavLink
                                                 to="/feature"
@@ -185,7 +177,7 @@ const Navber = () => {
                                         <li className='w-full'>
                                             <NavLink
                                                 to="/pricing "
-                                                className="block px-4 py-2 hover:bg-white hover:text-black">Pricing 
+                                                className="block px-4 py-2 hover:bg-white hover:text-black">Pricing
                                             </NavLink>
                                         </li>
                                         <li className='w-full'>
