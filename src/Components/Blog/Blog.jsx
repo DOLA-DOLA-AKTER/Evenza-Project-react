@@ -7,24 +7,24 @@ import blogImg3 from '../assets/blog-img3.png'
 import pricingBenefit from '../assets/pricing-benefit.png'
 
 // Components
-import SectionHeading2 from '../Container/SectionHeading'
 import Peragraph from '../Container/Peragraph'
 import Heading3 from '../Container/Heading3'
 import Container from '../Container/Container'
 import BlogCard from './BlogCard'
+import SectionHeading from '../Container/SectionHeading'
 
 
 const Blog = () => {
     return (
-        <div className='py-25 lg:px-0 px-5'>
+        <div>
             <Container>
-                <SectionHeading2
-                    about="Latest Blog"
-                    heading="Explore our latest insights stories
-            and updates"
-                    className='justify-center'
-                    classNames='md:w-184 w-full mx-auto text-center'
-                />
+                <div className='md:w-184 w-full block mx-auto text-center'>
+                    <SectionHeading
+                        secheading='flex flex-col items-center'
+                        peragraph="Latest Blog"
+                        heading='Explore our latest insights stories and updates'
+                    />
+                </div>
                 <div className='grid lg:grid-cols-2 grid-cols-1 gap-10 items-center pt-20'>
                     <div>
                         <BlogCard

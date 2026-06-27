@@ -4,15 +4,15 @@ import Container from '../Container/Container'
 import faqsImage from '../assets/faqs-image.png'
 import Heading3 from '../Container/Heading3'
 import Peragraph from '../Container/Peragraph'
-import SectionHeading2 from '../Container/SectionHeading'
 import Accordion from './Accordion'
+import SectionHeading from '../Container/SectionHeading'
 
 const FAQ = () => {
   return (
-    <div className='py-25 px-5 lg:px-0'>
+    <div>
         <Container>
             <div className='grid lg:grid-cols-[4fr_8fr] grid-cols-1 gap-10'>
-                <div className='relative'>
+                <div className='relative md:w-100 md:h-140' >
                     <div>
                         <img src={faqsImage} alt="faqsImage" />
                     </div>
@@ -31,9 +31,10 @@ const FAQ = () => {
                         </div>
                     </div>
                 </div>
+                
                 <div>
-                    <SectionHeading2
-                    about="FAQ's"
+                    <SectionHeading
+                    peragraph="FAQ's"
                     heading='What our customers say about their
                     experience'
                     />
@@ -63,7 +64,6 @@ const FAQ = () => {
                         />
                     </div>
                 </div>
-
             </div>
         </Container>
       

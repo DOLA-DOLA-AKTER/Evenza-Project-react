@@ -1,23 +1,27 @@
 import React from 'react'
 import supportsLogo from '../assets/supports-logo.png'
 import Container from '../Container/Container'
-import SectionHeading from '../Container/SecHeading'
 import Peragraph from '../Container/Peragraph'
 import Testimonialslider from './Testimonialslider'
+import SectionHeading from '../Container/SectionHeading'
 
 
 const Testimonials = () => {
-    
+
     return (
-        <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)] py-25 lg:px-0 px-5'>
+        <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)]'>
             <Container>
-                <SectionHeading
-                    peragraph='Testimonials'
-                    title='What our customers say about their
-                experience'
-                    className='md:w-197 w-full'
-                />
-                <Testimonialslider/>
+                <div className='md:w-195 w-full block mx-auto text-center'>
+                    <SectionHeading
+                        secheading='flex flex-col items-center'
+                        peragraph="Testimonials"
+                        heading='What our customers say about their experience'
+                        circle='bg-white'
+                        peragraphCSS='text-white'
+                        headingCSS='text-white'
+                    />
+                </div>
+                <Testimonialslider />
                 <Peragraph className='py-15 text-white text-center'>
                     Supported by Brands That Inspire Innovation
                 </Peragraph>

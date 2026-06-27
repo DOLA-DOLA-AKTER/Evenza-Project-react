@@ -36,8 +36,8 @@ const Accordion = ({ title, decs }) => {
 
       {/* Smooth Content */}
       <div
-        className={`transition-all duration-300 ease-in-out overflow-hidden ${open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}>
-        <div className="p-4 md:p-5 border border-t-black/10 border border-[#F6F6F7]">
+        className={`transition-all duration-300 ease-in-out overflow-hidden ${open ? "max-h-125 opacity-100" : "max-h-0 opacity-0"}`}>
+        <div className="p-4 md:p-5 border-t-black/10 border border-[#F6F6F7]">
           <p className="text-gray">
             {decs}
           </p>

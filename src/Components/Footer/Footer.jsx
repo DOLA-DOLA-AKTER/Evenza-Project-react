@@ -15,7 +15,7 @@ import Heading3 from '../Container/Heading3'
 
 const Footer = () => {
     return (
-        <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)] pt-20 px-5 lg:px-0'>
+        <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)]'>
             <Container>
                 <div className='flex flex-wrap justify-between items-center px-5 lg:px-0'>
                     <div>

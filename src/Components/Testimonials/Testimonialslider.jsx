@@ -40,6 +40,21 @@ const Testimonialslider = () => {
         customPaging: i => (
             <div className="dot-bar"></div>
         ),
+        responsive: [
+            {
+            breakpoint: 1170, // Tablet
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 768, // Mobile
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
+        
     };
 
     return (
