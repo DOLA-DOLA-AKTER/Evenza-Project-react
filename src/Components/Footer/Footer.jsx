@@ -15,7 +15,7 @@ import Heading3 from '../Container/Heading3'
 
 const Footer = () => {
     return (
-        <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)]'>
+        <footer className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)]'>
             <Container>
                 <div className='flex flex-wrap justify-between items-center px-5 lg:px-0'>
                     <div>
@@ -36,7 +36,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='grid lg:grid-cols-[5fr_7fr] gap-0 border border-t-white/10 border-l-0 border-r-0 border-b-0 lg:py-20 py-10 lg:mt-20 mt-15'>
+                <div className='grid lg:grid-cols-[5fr_7fr] gap-0 border border-t-white/10 border-l-0 border-r-0 border-b-0 lg:pt-20 pt-10 lg:mt-20 mt-15'>
                     <div className='md:w-90 w-full'>
                         <div>
                             <img src={logo} alt="logo" />
@@ -105,8 +105,8 @@ const Footer = () => {
                 </div>
             </Container>
             <hr className='opacity-10' />
-            <Peragraph className='text-white py-10 text-center'>Copyright © 2025 All Rights Reserved.</Peragraph>
-        </div>
+            <Peragraph className='text-white py-8 text-center'>Copyright © 2025 All Rights Reserved.</Peragraph>
+        </footer>
     )
 }
 
