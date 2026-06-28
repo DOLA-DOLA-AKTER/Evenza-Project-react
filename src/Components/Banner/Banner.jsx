@@ -15,7 +15,6 @@ const Banner = () => {
       <Container className="lg:py-0! py-0!">
         <div className='flex flex-col items-center justify-center text-center  px-5 lg:px-0'>
 
-          {/* TOP BADGE */}
           <div className='flex items-center gap-2 p-2 bg-white/20 backdrop-blur-[20px] rounded-full'>
             <div className='flex items-center'>
               <div className='relative'>
@@ -33,7 +32,6 @@ const Banner = () => {
             </p>
           </div>
 
-          {/* HEADING */}
           <div className='mt-6'>
             <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-[76px] font-extrabold leading-tight lg:leading-21 tracking-tight text-center'>
               Connecting Minds to Shape <br className='hidden md:block' />
@@ -62,12 +60,10 @@ const Banner = () => {
 
           </div>
 
-          {/* TEXT */}
           <p className='text-base md:text-lg font-bold pt-10 pb-6'>
             Upcoming Speaker Reveal - Don't Miss Out
           </p>
 
-          {/* COUNTDOWN */}
           <Countdown />
 
         </div>

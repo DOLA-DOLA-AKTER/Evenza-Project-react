@@ -1,7 +1,6 @@
 import React from 'react'
 import { FaStar } from "react-icons/fa";
 import { LuBellRing } from "react-icons/lu";
-
 import Container from '../Container/Container'
 import Circle from '../Container/SectionHeading'
 import Heading from '../Container/Heading'
@@ -15,7 +14,6 @@ const Feature = () => {
         <div className='bg-[radial-gradient(circle_at_top,#47348C_0%,#161A2D_100%)] '>
             <Container>
 
-                {/* Section Heading */}
                 <div className='md:w-160 w-full block mx-auto text-center'>
                     <SectionHeading
                     secheading='flex flex-col items-center'

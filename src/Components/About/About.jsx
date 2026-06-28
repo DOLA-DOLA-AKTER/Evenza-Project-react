@@ -23,7 +23,6 @@ const About = () => {
             <Container>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-11 items-center'>
 
-                    {/* images */}
                     <div className="flex flex-col items-center lg:items-start relative">
 
                         <div className='flex flex-col gap-4'>
