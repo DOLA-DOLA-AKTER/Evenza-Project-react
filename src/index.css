@@ -53,27 +53,16 @@
 
 /* Testimonial-slider */
 
-.slick-dots li .dot-bar {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: white;
-  opacity: 0.1;
-  transition: all 0.3s ease;
-}
-.slick-dots li.slick-active .dot-bar {
+
+ .slick-active .dot-bar {
   width: 20px;
   border-radius: 5px;
   background-color: var(--color-primary);
-  opacity: 1;
 }
-.slick-dots li:hover .dot-bar {
-  opacity: 0.5;
-}
-
 
 
 h4.text-black.md\:font-bold.font-semibold.md\:text-\[20px\].md\:leading-5\.5.text-white.pt-20.pb-3.text-nowrap {
     font-size: 18px;
 }
+
 

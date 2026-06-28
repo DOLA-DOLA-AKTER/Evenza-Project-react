@@ -14,7 +14,7 @@ const Navber = () => {
 
     return (
         <header className='backdrop-blur-[10px] fixed top-0 left-0 z-50 w-full'>
-            <nav className='py-6 bg-white/10 px-5 lg:px-0'>
+            <nav className='py-6 bg-white/10'>
                 <Container className="lg:py-0! py-0!">
                     <div className='flex justify-between items-center'>
 

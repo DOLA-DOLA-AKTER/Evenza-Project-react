@@ -38,7 +38,7 @@ const Testimonialslider = () => {
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
         customPaging: i => (
-            <div className="dot-bar"></div>
+            <div className="w-2.5 h-2.5 rounded-full bg-white/20 duration-300 hover:bg-white/50 dot-bar"></div>
         ),
         responsive: [
             {
